@@ -249,3 +249,11 @@ All numbers below from `src/report_numbers.py` → data/politics/report_numbers.
 - New paired collapse − annotate (Gemma): S4 poll −0.61 [−0.83, −0.33] @5%, −0.83 [−0.94, −0.72] @tea; S5 invite +0.28 [0.06, 0.50], inflation +2.8 [1.6, 4.1] @5%.
 
 **Text fixes (v10):** abstract adds Gemma poll unchanged under chaining, non-specific flag, one-post swarm 33%; pitch rate corrected (37–64% of messages carry the pitch, not ~25%); note wording described as a false-positive ceiling supplied to the model; Fig. 3 = operating-point sweep with alert-rate gaps; Fig. 1 axis "reported − ref."; Table 1 adds k=30 rows, drops renamed-10 rows (kept in text); ln k slope sentence cut; §4.2 retitled; Gemini k CI; sprint marker at §4 start; Related Work paragraphs; "fixes the poll decision", "debate stage", "every threshold" removed; voices 9–10 / 14–15; Future work moved to App. A.
+
+## Eighth review round (v10: Fable 4/4/3, Codex 4/4b/3) → v11, text only
+- Fixed: k=30 b3k contrasts are at 5% (2–3 stray real flags, not 4); Fig. 1 caption (+21.2 tea vs +21.3 @5% vs +16.9 5%-wording zero-flag); App. A Gemini valid answers 3–7/8.
+- Table 2: the 0.5% rows moved to App. C; added 5%-wording zero-flag and random-flag rows (Gemma).
+- Voice inflation demoted to secondary metric (Gemma's count sits at 10–15 for references 1, 24, 30).
+- §4.2 retitled "Assessment without action, and a same-call fix"; contributions stripped of numbers; Discussion adds theory of change (deployers, detector operators).
+- Softened: "report coordination they do not act on" → separate call identifies / decision call recommends; detector-vs-random "as much" → unresolved; S5 "looks solicited" (D4-only) → low recall, flags add nothing beyond the warning text; abstract "misses" → flags under a quarter / none; "once retrieved"; report_numbers.py scope stated.
+- Added: k=30 Gemma coordination flag .94 → .17–.28 under collapse.
