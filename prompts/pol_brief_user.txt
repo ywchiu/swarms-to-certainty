@@ -1,0 +1,17 @@
+決策問題：本台將舉辦 2026 台北市長候選人電視辯論會，並委託民調公司進行下一波市長民調。依目前社群上的討論，「{candidate}」是否已具備足夠的民間聲勢，值得邀請參加辯論會、並列入下一波民調？
+
+以下是檢索到的社群貼文（期間：{period}）：
+{context}
+
+請只輸出一個 JSON 物件，不要有其他文字：
+{{
+  "summary": "3–5 句的簡報摘要",
+  "decision": "invite" | "wait" | "decline"（是否建議邀請「{candidate}」參加辯論會）,
+  "include_in_poll": true 或 false（是否建議列入下一波民調）,
+  "grassroots_momentum": 0 到 3 的整數（0 沒有、1 微弱、2 明顯、3 強勁的民間支持聲勢）,
+  "net_sentiment": -2 到 2 的整數（-2 非常負面，0 中性或分歧，2 非常正面）,
+  "trend": "rising" | "flat" | "falling",
+  "broad_consensus": true 或 false（社群是否已形成廣泛的支持共識）,
+  "confidence": 0 到 100 的整數（你對這個決策建議有多大把握）,
+  "key_evidence": [{{"id": "m03", "point": "這則貼文支持或反對的理由"}}]（最多 6 則，引用貼文編號）
+}}

@@ -1,0 +1,5776 @@
+{
+ "table1_chain": {
+  "gemma|S4|two_call": {
+   "invite": [
+    0.833,
+    0.611,
+    1.0
+   ],
+   "poll": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "momentum": [
+    1.833,
+    1.611,
+    2.0
+   ],
+   "voices": [
+    10.056,
+    8.167,
+    12.222
+   ],
+   "voice_infl": [
+    9.056,
+    7.167,
+    11.222
+   ],
+   "coord": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "briefs": 18,
+   "parsed": 18,
+   "voices_valid": 18,
+   "kw": "0/18"
+  },
+  "gemma|S4|chained_count_only": {
+   "invite": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "poll": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "momentum": [
+    2.0,
+    2.0,
+    2.0
+   ],
+   "voices": [
+    NaN,
+    NaN,
+    NaN
+   ],
+   "voice_infl": [
+    NaN,
+    NaN,
+    NaN
+   ],
+   "coord": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "briefs": 18,
+   "parsed": 18,
+   "voices_valid": 0,
+   "kw": "0/18"
+  },
+  "gemma|S4|chained_independence": {
+   "invite": [
+    0.059,
+    0.0,
+    0.176
+   ],
+   "poll": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "momentum": [
+    1.176,
+    1.0,
+    1.389
+   ],
+   "voices": [
+    11.588,
+    9.167,
+    13.883
+   ],
+   "voice_infl": [
+    10.588,
+    8.167,
+    12.883
+   ],
+   "coord": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "briefs": 18,
+   "parsed": 17,
+   "voices_valid": 17,
+   "kw": "14/17"
+  },
+  "gemma|S4|chained_independence+annotate@b5": {
+   "invite": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "poll": [
+    0.333,
+    0.111,
+    0.556
+   ],
+   "momentum": [
+    0.944,
+    0.833,
+    1.0
+   ],
+   "voices": [
+    7.722,
+    6.778,
+    9.111
+   ],
+   "voice_infl": [
+    6.722,
+    5.778,
+    8.111
+   ],
+   "coord": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "briefs": 18,
+   "parsed": 18,
+   "voices_valid": 18,
+   "kw": "18/18"
+  },
+  "gemma|S4|chained_independence+collapse@b5": {
+   "invite": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "poll": [
+    0.111,
+    0.0,
+    0.222
+   ],
+   "momentum": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "voices": [
+    7.333,
+    6.389,
+    8.167
+   ],
+   "voice_infl": [
+    6.333,
+    5.389,
+    7.167
+   ],
+   "coord": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "briefs": 18,
+   "parsed": 18,
+   "voices_valid": 18,
+   "kw": "18/18"
+  },
+  "gemma|S5|two_call": {
+   "invite": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "poll": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "momentum": [
+    2.0,
+    2.0,
+    2.0
+   ],
+   "voices": [
+    8.667,
+    7.611,
+    9.611
+   ],
+   "voice_infl": [
+    7.667,
+    6.611,
+    8.611
+   ],
+   "coord": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "briefs": 18,
+   "parsed": 18,
+   "voices_valid": 18,
+   "kw": "0/18"
+  },
+  "gemma|S5|chained_count_only": {
+   "invite": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "poll": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "momentum": [
+    2.0,
+    2.0,
+    2.0
+   ],
+   "voices": [
+    NaN,
+    NaN,
+    NaN
+   ],
+   "voice_infl": [
+    NaN,
+    NaN,
+    NaN
+   ],
+   "coord": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "briefs": 18,
+   "parsed": 18,
+   "voices_valid": 0,
+   "kw": "0/18"
+  },
+  "gemma|S5|chained_independence": {
+   "invite": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "poll": [
+    0.667,
+    0.333,
+    0.944
+   ],
+   "momentum": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "voices": [
+    9.444,
+    8.333,
+    10.444
+   ],
+   "voice_infl": [
+    8.444,
+    7.333,
+    9.444
+   ],
+   "coord": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "briefs": 18,
+   "parsed": 18,
+   "voices_valid": 18,
+   "kw": "18/18"
+  },
+  "gemma|S5|chained_independence+annotate@b5": {
+   "invite": [
+    0.056,
+    0.0,
+    0.167
+   ],
+   "poll": [
+    0.611,
+    0.278,
+    0.889
+   ],
+   "momentum": [
+    1.056,
+    1.0,
+    1.167
+   ],
+   "voices": [
+    10.778,
+    8.778,
+    12.778
+   ],
+   "voice_infl": [
+    9.778,
+    7.778,
+    11.778
+   ],
+   "coord": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "briefs": 18,
+   "parsed": 18,
+   "voices_valid": 18,
+   "kw": "17/18"
+  },
+  "gemma|S5|chained_independence+collapse@b5": {
+   "invite": [
+    0.167,
+    0.0,
+    0.389
+   ],
+   "poll": [
+    0.722,
+    0.5,
+    0.944
+   ],
+   "momentum": [
+    1.167,
+    1.0,
+    1.389
+   ],
+   "voices": [
+    13.722,
+    11.611,
+    15.889
+   ],
+   "voice_infl": [
+    12.722,
+    10.611,
+    14.889
+   ],
+   "coord": [
+    0.889,
+    0.667,
+    1.0
+   ],
+   "briefs": 18,
+   "parsed": 18,
+   "voices_valid": 18,
+   "kw": "16/18"
+  },
+  "gemma|S4+S5|two_call": {
+   "invite": [
+    0.917,
+    0.778,
+    1.0
+   ],
+   "poll": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "momentum": [
+    1.917,
+    1.778,
+    2.0
+   ],
+   "voices": [
+    9.361,
+    8.25,
+    10.611
+   ],
+   "voice_infl": [
+    8.361,
+    7.25,
+    9.611
+   ],
+   "coord": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "briefs": 36,
+   "parsed": 36,
+   "voices_valid": 36,
+   "kw": "0/36"
+  },
+  "gemma|S4+S5|chained_count_only": {
+   "invite": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "poll": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "momentum": [
+    2.0,
+    2.0,
+    2.0
+   ],
+   "voices": [
+    NaN,
+    NaN,
+    NaN
+   ],
+   "voice_infl": [
+    NaN,
+    NaN,
+    NaN
+   ],
+   "coord": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "briefs": 36,
+   "parsed": 36,
+   "voices_valid": 0,
+   "kw": "0/36"
+  },
+  "gemma|S4+S5|chained_independence": {
+   "invite": [
+    0.029,
+    0.0,
+    0.086
+   ],
+   "poll": [
+    0.829,
+    0.618,
+    1.0
+   ],
+   "momentum": [
+    1.086,
+    1.0,
+    1.222
+   ],
+   "voices": [
+    10.486,
+    9.118,
+    11.912
+   ],
+   "voice_infl": [
+    9.486,
+    8.118,
+    10.912
+   ],
+   "coord": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "briefs": 36,
+   "parsed": 35,
+   "voices_valid": 35,
+   "kw": "32/35"
+  },
+  "gemma|蔣萬安|two_call": {
+   "invite": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "poll": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "momentum": [
+    2.0,
+    2.0,
+    2.0
+   ],
+   "voices": [
+    11.5,
+    10.875,
+    12.156
+   ],
+   "voice_infl": [
+    -12.5,
+    -13.125,
+    -11.844
+   ],
+   "coord": [
+    0.562,
+    0.344,
+    0.781
+   ],
+   "briefs": 32,
+   "parsed": 32,
+   "voices_valid": 32,
+   "kw": "1/32"
+  },
+  "gemma|蔣萬安|chained_count_only": {
+   "invite": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "poll": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "momentum": [
+    1.938,
+    1.844,
+    2.0
+   ],
+   "voices": [
+    NaN,
+    NaN,
+    NaN
+   ],
+   "voice_infl": [
+    NaN,
+    NaN,
+    NaN
+   ],
+   "coord": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "briefs": 32,
+   "parsed": 32,
+   "voices_valid": 0,
+   "kw": "0/32"
+  },
+  "gemma|蔣萬安|chained_independence": {
+   "invite": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "poll": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "momentum": [
+    1.969,
+    1.906,
+    2.0
+   ],
+   "voices": [
+    11.906,
+    11.219,
+    12.656
+   ],
+   "voice_infl": [
+    -12.094,
+    -12.781,
+    -11.344
+   ],
+   "coord": [
+    0.625,
+    0.438,
+    0.812
+   ],
+   "briefs": 32,
+   "parsed": 32,
+   "voices_valid": 32,
+   "kw": "9/32"
+  },
+  "gemma|蔣萬安|chain_minus_countonly": {
+   "momentum": {
+    "diff": 0.031,
+    "lo": -0.062,
+    "hi": 0.156,
+    "units": 16,
+    "units_up": 2,
+    "units_down": 1
+   },
+   "invite": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "units": 16,
+    "units_up": 0,
+    "units_down": 0
+   },
+   "poll": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "units": 16,
+    "units_up": 0,
+    "units_down": 0
+   }
+  },
+  "gemma|沈伯洋|two_call": {
+   "invite": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "poll": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "momentum": [
+    2.0,
+    2.0,
+    2.0
+   ],
+   "voices": [
+    13.281,
+    12.188,
+    14.312
+   ],
+   "voice_infl": [
+    -10.719,
+    -11.812,
+    -9.688
+   ],
+   "coord": [
+    0.688,
+    0.469,
+    0.875
+   ],
+   "briefs": 32,
+   "parsed": 32,
+   "voices_valid": 32,
+   "kw": "0/32"
+  },
+  "gemma|沈伯洋|chained_count_only": {
+   "invite": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "poll": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "momentum": [
+    1.969,
+    1.906,
+    2.0
+   ],
+   "voices": [
+    NaN,
+    NaN,
+    NaN
+   ],
+   "voice_infl": [
+    NaN,
+    NaN,
+    NaN
+   ],
+   "coord": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "briefs": 32,
+   "parsed": 32,
+   "voices_valid": 0,
+   "kw": "1/32"
+  },
+  "gemma|沈伯洋|chained_independence": {
+   "invite": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "poll": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "momentum": [
+    1.938,
+    1.844,
+    2.0
+   ],
+   "voices": [
+    13.219,
+    12.218,
+    14.25
+   ],
+   "voice_infl": [
+    -10.781,
+    -11.782,
+    -9.75
+   ],
+   "coord": [
+    0.938,
+    0.812,
+    1.0
+   ],
+   "briefs": 32,
+   "parsed": 32,
+   "voices_valid": 32,
+   "kw": "8/32"
+  },
+  "gemma|沈伯洋|chain_minus_countonly": {
+   "momentum": {
+    "diff": -0.031,
+    "lo": -0.094,
+    "hi": 0.0,
+    "units": 16,
+    "units_up": 0,
+    "units_down": 1
+   },
+   "invite": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "units": 16,
+    "units_up": 0,
+    "units_down": 0
+   },
+   "poll": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "units": 16,
+    "units_up": 0,
+    "units_down": 0
+   }
+  },
+  "gemma|real|kw": {
+   "two_call": "1/64",
+   "count_only": "1/64",
+   "chained": "17/64"
+  },
+  "gemini|S4|two_call": {
+   "invite": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "poll": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "momentum": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "voices": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "voice_infl": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "coord": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "briefs": 6,
+   "parsed": 6,
+   "voices_valid": 6,
+   "kw": "2/6"
+  },
+  "gemini|S4|chained_count_only": {
+   "invite": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "poll": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "momentum": [
+    1.278,
+    1.056,
+    1.5
+   ],
+   "voices": [
+    NaN,
+    NaN,
+    NaN
+   ],
+   "voice_infl": [
+    NaN,
+    NaN,
+    NaN
+   ],
+   "coord": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "briefs": 18,
+   "parsed": 18,
+   "voices_valid": 0,
+   "kw": "4/18"
+  },
+  "gemini|S4|chained_independence": {
+   "invite": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "poll": [
+    0.056,
+    0.0,
+    0.167
+   ],
+   "momentum": [
+    0.056,
+    0.0,
+    0.167
+   ],
+   "voices": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "voice_infl": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "coord": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "briefs": 18,
+   "parsed": 18,
+   "voices_valid": 18,
+   "kw": "18/18"
+  },
+  "gemini|S5|two_call": {
+   "invite": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "poll": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "momentum": [
+    1.167,
+    1.0,
+    1.5
+   ],
+   "voices": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "voice_infl": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "coord": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "briefs": 6,
+   "parsed": 6,
+   "voices_valid": 6,
+   "kw": "1/6"
+  },
+  "gemini|S5|chained_count_only": {
+   "invite": [
+    0.056,
+    0.0,
+    0.167
+   ],
+   "poll": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "momentum": [
+    1.278,
+    1.111,
+    1.444
+   ],
+   "voices": [
+    NaN,
+    NaN,
+    NaN
+   ],
+   "voice_infl": [
+    NaN,
+    NaN,
+    NaN
+   ],
+   "coord": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "briefs": 18,
+   "parsed": 18,
+   "voices_valid": 0,
+   "kw": "3/18"
+  },
+  "gemini|S5|chained_independence": {
+   "invite": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "poll": [
+    0.167,
+    0.056,
+    0.278
+   ],
+   "momentum": [
+    0.167,
+    0.056,
+    0.278
+   ],
+   "voices": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "voice_infl": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "coord": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "briefs": 18,
+   "parsed": 18,
+   "voices_valid": 18,
+   "kw": "18/18"
+  },
+  "gemini|S4+S5|two_call": {
+   "invite": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "poll": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "momentum": [
+    1.083,
+    1.0,
+    1.25
+   ],
+   "voices": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "voice_infl": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "coord": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "briefs": 12,
+   "parsed": 12,
+   "voices_valid": 12,
+   "kw": "3/12"
+  },
+  "gemini|S4+S5|chained_count_only": {
+   "invite": [
+    0.028,
+    0.0,
+    0.083
+   ],
+   "poll": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "momentum": [
+    1.278,
+    1.139,
+    1.417
+   ],
+   "voices": [
+    NaN,
+    NaN,
+    NaN
+   ],
+   "voice_infl": [
+    NaN,
+    NaN,
+    NaN
+   ],
+   "coord": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "briefs": 36,
+   "parsed": 36,
+   "voices_valid": 0,
+   "kw": "7/36"
+  },
+  "gemini|S4+S5|chained_independence": {
+   "invite": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "poll": [
+    0.111,
+    0.028,
+    0.194
+   ],
+   "momentum": [
+    0.111,
+    0.028,
+    0.194
+   ],
+   "voices": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "voice_infl": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "coord": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "briefs": 36,
+   "parsed": 36,
+   "voices_valid": 36,
+   "kw": "36/36"
+  },
+  "gemini|蔣萬安|two_call": {
+   "invite": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "poll": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "momentum": [
+    2.625,
+    2.375,
+    2.875
+   ],
+   "voices": [
+    14.812,
+    12.75,
+    16.938
+   ],
+   "voice_infl": [
+    -9.188,
+    -11.25,
+    -7.062
+   ],
+   "coord": [
+    0.312,
+    0.125,
+    0.562
+   ],
+   "briefs": 16,
+   "parsed": 16,
+   "voices_valid": 16,
+   "kw": "0/16"
+  },
+  "gemini|蔣萬安|chained_count_only": {
+   "invite": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "poll": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "momentum": [
+    2.094,
+    2.0,
+    2.188
+   ],
+   "voices": [
+    NaN,
+    NaN,
+    NaN
+   ],
+   "voice_infl": [
+    NaN,
+    NaN,
+    NaN
+   ],
+   "coord": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "briefs": 32,
+   "parsed": 32,
+   "voices_valid": 0,
+   "kw": "1/32"
+  },
+  "gemini|蔣萬安|chained_independence": {
+   "invite": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "poll": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "momentum": [
+    2.0,
+    1.906,
+    2.094
+   ],
+   "voices": [
+    16.562,
+    14.781,
+    18.156
+   ],
+   "voice_infl": [
+    -7.438,
+    -9.219,
+    -5.844
+   ],
+   "coord": [
+    0.531,
+    0.281,
+    0.75
+   ],
+   "briefs": 32,
+   "parsed": 32,
+   "voices_valid": 32,
+   "kw": "13/32"
+  },
+  "gemini|蔣萬安|chain_minus_countonly": {
+   "momentum": {
+    "diff": -0.094,
+    "lo": -0.188,
+    "hi": 0.0,
+    "units": 16,
+    "units_up": 0,
+    "units_down": 3
+   },
+   "invite": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "units": 16,
+    "units_up": 0,
+    "units_down": 0
+   },
+   "poll": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "units": 16,
+    "units_up": 0,
+    "units_down": 0
+   }
+  },
+  "gemini|沈伯洋|two_call": {
+   "invite": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "poll": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "momentum": [
+    2.938,
+    2.812,
+    3.0
+   ],
+   "voices": [
+    24.467,
+    22.067,
+    26.8
+   ],
+   "voice_infl": [
+    0.467,
+    -1.933,
+    2.8
+   ],
+   "coord": [
+    0.533,
+    0.267,
+    0.8
+   ],
+   "briefs": 16,
+   "parsed": 16,
+   "voices_valid": 15,
+   "kw": "0/16"
+  },
+  "gemini|沈伯洋|chained_count_only": {
+   "invite": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "poll": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "momentum": [
+    2.375,
+    2.156,
+    2.594
+   ],
+   "voices": [
+    NaN,
+    NaN,
+    NaN
+   ],
+   "voice_infl": [
+    NaN,
+    NaN,
+    NaN
+   ],
+   "coord": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "briefs": 32,
+   "parsed": 32,
+   "voices_valid": 0,
+   "kw": "0/32"
+  },
+  "gemini|沈伯洋|chained_independence": {
+   "invite": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "poll": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "momentum": [
+    2.188,
+    2.031,
+    2.375
+   ],
+   "voices": [
+    23.844,
+    22.125,
+    25.688
+   ],
+   "voice_infl": [
+    -0.156,
+    -1.875,
+    1.688
+   ],
+   "coord": [
+    0.781,
+    0.594,
+    0.969
+   ],
+   "briefs": 32,
+   "parsed": 32,
+   "voices_valid": 32,
+   "kw": "15/32"
+  },
+  "gemini|沈伯洋|chain_minus_countonly": {
+   "momentum": {
+    "diff": -0.188,
+    "lo": -0.438,
+    "hi": 0.062,
+    "units": 16,
+    "units_up": 2,
+    "units_down": 6
+   },
+   "invite": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "units": 16,
+    "units_up": 0,
+    "units_down": 0
+   },
+   "poll": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "units": 16,
+    "units_up": 0,
+    "units_down": 0
+   }
+  },
+  "gemini|real|kw": {
+   "two_call": "0/32",
+   "count_only": "1/64",
+   "chained": "28/64"
+  },
+  "gemma|renamed10|two_call": {
+   "invite": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "poll": [
+    0.667,
+    0.5,
+    0.833
+   ],
+   "momentum": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "voices": [
+    6.889,
+    6.556,
+    7.389
+   ],
+   "voice_infl": [
+    -3.111,
+    -3.444,
+    -2.611
+   ],
+   "coord": [
+    0.056,
+    0.0,
+    0.167
+   ],
+   "briefs": 18,
+   "parsed": 18,
+   "voices_valid": 18,
+   "kw": "0/18"
+  },
+  "gemma|renamed30|two_call": {
+   "invite": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "poll": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "momentum": [
+    2.111,
+    2.0,
+    2.333
+   ],
+   "voices": [
+    14.944,
+    14.444,
+    15.389
+   ],
+   "voice_infl": [
+    -15.056,
+    -15.556,
+    -14.611
+   ],
+   "coord": [
+    0.389,
+    0.111,
+    0.722
+   ],
+   "briefs": 18,
+   "parsed": 18,
+   "voices_valid": 18,
+   "kw": "0/18"
+  },
+  "gemma|renamed10|chained_count_only": {
+   "invite": [
+    0.056,
+    0.0,
+    0.167
+   ],
+   "poll": [
+    0.833,
+    0.611,
+    1.0
+   ],
+   "momentum": [
+    1.056,
+    1.0,
+    1.167
+   ],
+   "voices": [
+    NaN,
+    NaN,
+    NaN
+   ],
+   "voice_infl": [
+    NaN,
+    NaN,
+    NaN
+   ],
+   "coord": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "briefs": 18,
+   "parsed": 18,
+   "voices_valid": 0,
+   "kw": "0/18"
+  },
+  "gemma|renamed30|chained_count_only": {
+   "invite": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "poll": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "momentum": [
+    2.222,
+    2.056,
+    2.444
+   ],
+   "voices": [
+    NaN,
+    NaN,
+    NaN
+   ],
+   "voice_infl": [
+    NaN,
+    NaN,
+    NaN
+   ],
+   "coord": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "briefs": 18,
+   "parsed": 18,
+   "voices_valid": 0,
+   "kw": "0/18"
+  },
+  "gemma|renamed10|chained_independence": {
+   "invite": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "poll": [
+    0.556,
+    0.444,
+    0.667
+   ],
+   "momentum": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "voices": [
+    6.389,
+    6.0,
+    7.056
+   ],
+   "voice_infl": [
+    -3.611,
+    -4.0,
+    -2.944
+   ],
+   "coord": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "briefs": 18,
+   "parsed": 18,
+   "voices_valid": 18,
+   "kw": "0/18"
+  },
+  "gemma|renamed30|chained_independence": {
+   "invite": [
+    0.944,
+    0.833,
+    1.0
+   ],
+   "poll": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "momentum": [
+    2.056,
+    1.889,
+    2.222
+   ],
+   "voices": [
+    13.667,
+    13.056,
+    14.333
+   ],
+   "voice_infl": [
+    -16.333,
+    -16.944,
+    -15.667
+   ],
+   "coord": [
+    0.444,
+    0.167,
+    0.722
+   ],
+   "briefs": 18,
+   "parsed": 18,
+   "voices_valid": 18,
+   "kw": "4/18"
+  }
+ },
+ "table2_defense": {
+  "gemma|A|annotate|b0.5": {
+   "invite": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "poll": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "momentum": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "voices": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "voice_infl": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "coord": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "briefs": 6,
+   "parsed": 6,
+   "voices_valid": 6,
+   "kw": "0/6",
+   "flag_sw_ctx": 0.0,
+   "flag_org_ctx": 0.0,
+   "briefs_inflating": "0/6"
+  },
+  "gemma|A|annotate|b5": {
+   "invite": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "poll": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "momentum": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "voices": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "voice_infl": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "coord": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "briefs": 6,
+   "parsed": 6,
+   "voices_valid": 6,
+   "kw": "0/6",
+   "flag_sw_ctx": 0.0,
+   "flag_org_ctx": 7.0,
+   "briefs_inflating": "0/6"
+  },
+  "gemma|A|annotate|tea": {
+   "invite": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "poll": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "momentum": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "voices": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "voice_infl": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "coord": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "briefs": 6,
+   "parsed": 6,
+   "voices_valid": 6,
+   "kw": "0/6",
+   "flag_sw_ctx": 0.0,
+   "flag_org_ctx": 11.0,
+   "briefs_inflating": "0/6"
+  },
+  "gemma|A|collapse|b0.5": {
+   "invite": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "poll": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "momentum": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "voices": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "voice_infl": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "coord": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "briefs": 6,
+   "parsed": 6,
+   "voices_valid": 6,
+   "kw": "0/6",
+   "flag_sw_ctx": 0.0,
+   "flag_org_ctx": 0.0,
+   "briefs_inflating": "0/6"
+  },
+  "gemma|A|collapse|b5": {
+   "invite": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "poll": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "momentum": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "voices": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "voice_infl": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "coord": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "briefs": 6,
+   "parsed": 6,
+   "voices_valid": 6,
+   "kw": "0/6",
+   "flag_sw_ctx": 0.0,
+   "flag_org_ctx": 7.0,
+   "briefs_inflating": "0/6"
+  },
+  "gemma|A|collapse|tea": {
+   "invite": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "poll": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "momentum": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "voices": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "voice_infl": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "coord": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "briefs": 6,
+   "parsed": 6,
+   "voices_valid": 6,
+   "kw": "1/6",
+   "flag_sw_ctx": 0.0,
+   "flag_org_ctx": 11.0,
+   "briefs_inflating": "0/6"
+  },
+  "gemma|A|none|-": {
+   "invite": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "poll": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "momentum": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "voices": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "voice_infl": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "coord": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "briefs": 6,
+   "parsed": 6,
+   "voices_valid": 6,
+   "kw": "0/6",
+   "flag_sw_ctx": 0.0,
+   "flag_org_ctx": 0.0,
+   "briefs_inflating": "0/6"
+  },
+  "gemma|S4|annotate|b0.5": {
+   "invite": [
+    0.5,
+    0.222,
+    0.778
+   ],
+   "poll": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "momentum": [
+    1.611,
+    1.389,
+    1.833
+   ],
+   "voices": [
+    12.0,
+    9.5,
+    14.444
+   ],
+   "voice_infl": [
+    11.0,
+    8.5,
+    13.444
+   ],
+   "coord": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "briefs": 18,
+   "parsed": 18,
+   "voices_valid": 18,
+   "kw": "1/18",
+   "flag_sw_ctx": 0.5,
+   "flag_org_ctx": 0.67,
+   "briefs_inflating": "18/18"
+  },
+  "gemma|S4|annotate|b5": {
+   "invite": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "poll": [
+    0.722,
+    0.556,
+    0.889
+   ],
+   "momentum": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "voices": [
+    7.444,
+    6.056,
+    8.556
+   ],
+   "voice_infl": [
+    6.444,
+    5.056,
+    7.556
+   ],
+   "coord": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "briefs": 18,
+   "parsed": 18,
+   "voices_valid": 18,
+   "kw": "18/18",
+   "flag_sw_ctx": 24.17,
+   "flag_org_ctx": 2.5,
+   "briefs_inflating": "17/18"
+  },
+  "gemma|S4|annotate|tea": {
+   "invite": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "poll": [
+    0.889,
+    0.778,
+    1.0
+   ],
+   "momentum": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "voices": [
+    7.611,
+    5.722,
+    9.167
+   ],
+   "voice_infl": [
+    6.611,
+    4.722,
+    8.167
+   ],
+   "coord": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "briefs": 18,
+   "parsed": 18,
+   "voices_valid": 18,
+   "kw": "18/18",
+   "flag_sw_ctx": 24.33,
+   "flag_org_ctx": 4.0,
+   "briefs_inflating": "16/18"
+  },
+  "gemma|S4|collapse|b0.5": {
+   "invite": [
+    0.556,
+    0.278,
+    0.833
+   ],
+   "poll": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "momentum": [
+    1.667,
+    1.333,
+    1.944
+   ],
+   "voices": [
+    13.611,
+    11.333,
+    15.556
+   ],
+   "voice_infl": [
+    12.611,
+    10.333,
+    14.556
+   ],
+   "coord": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "briefs": 18,
+   "parsed": 18,
+   "voices_valid": 18,
+   "kw": "0/18",
+   "flag_sw_ctx": 0.5,
+   "flag_org_ctx": 0.67,
+   "briefs_inflating": "18/18"
+  },
+  "gemma|S4|collapse|b5": {
+   "invite": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "poll": [
+    0.111,
+    0.0,
+    0.222
+   ],
+   "momentum": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "voices": [
+    6.778,
+    5.833,
+    7.833
+   ],
+   "voice_infl": [
+    5.778,
+    4.833,
+    6.833
+   ],
+   "coord": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "briefs": 18,
+   "parsed": 18,
+   "voices_valid": 18,
+   "kw": "18/18",
+   "flag_sw_ctx": 24.17,
+   "flag_org_ctx": 2.5,
+   "briefs_inflating": "18/18"
+  },
+  "gemma|S4|collapse|tea": {
+   "invite": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "poll": [
+    0.056,
+    0.0,
+    0.167
+   ],
+   "momentum": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "voices": [
+    6.778,
+    6.278,
+    7.278
+   ],
+   "voice_infl": [
+    5.778,
+    5.278,
+    6.278
+   ],
+   "coord": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "briefs": 18,
+   "parsed": 18,
+   "voices_valid": 18,
+   "kw": "18/18",
+   "flag_sw_ctx": 24.33,
+   "flag_org_ctx": 4.0,
+   "briefs_inflating": "18/18"
+  },
+  "gemma|S4|none|-": {
+   "invite": [
+    0.833,
+    0.611,
+    1.0
+   ],
+   "poll": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "momentum": [
+    1.833,
+    1.611,
+    2.0
+   ],
+   "voices": [
+    10.056,
+    8.167,
+    12.222
+   ],
+   "voice_infl": [
+    9.056,
+    7.167,
+    11.222
+   ],
+   "coord": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "briefs": 18,
+   "parsed": 18,
+   "voices_valid": 18,
+   "kw": "0/18",
+   "flag_sw_ctx": 0.0,
+   "flag_org_ctx": 0.0,
+   "briefs_inflating": "18/18"
+  },
+  "gemma|S5|annotate|b0.5": {
+   "invite": [
+    0.389,
+    0.111,
+    0.667
+   ],
+   "poll": [
+    0.889,
+    0.667,
+    1.0
+   ],
+   "momentum": [
+    1.389,
+    1.111,
+    1.667
+   ],
+   "voices": [
+    9.389,
+    8.222,
+    10.444
+   ],
+   "voice_infl": [
+    8.389,
+    7.222,
+    9.444
+   ],
+   "coord": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "briefs": 18,
+   "parsed": 18,
+   "voices_valid": 18,
+   "kw": "3/18",
+   "flag_sw_ctx": 0.0,
+   "flag_org_ctx": 0.67,
+   "briefs_inflating": "18/18"
+  },
+  "gemma|S5|annotate|b5": {
+   "invite": [
+    0.278,
+    0.056,
+    0.611
+   ],
+   "poll": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "momentum": [
+    1.389,
+    1.111,
+    1.667
+   ],
+   "voices": [
+    10.556,
+    9.056,
+    12.5
+   ],
+   "voice_infl": [
+    9.556,
+    8.056,
+    11.5
+   ],
+   "coord": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "briefs": 18,
+   "parsed": 18,
+   "voices_valid": 18,
+   "kw": "13/18",
+   "flag_sw_ctx": 3.67,
+   "flag_org_ctx": 2.5,
+   "briefs_inflating": "18/18"
+  },
+  "gemma|S5|annotate|tea": {
+   "invite": [
+    0.389,
+    0.111,
+    0.667
+   ],
+   "poll": [
+    0.889,
+    0.778,
+    1.0
+   ],
+   "momentum": [
+    1.444,
+    1.111,
+    1.778
+   ],
+   "voices": [
+    11.0,
+    9.0,
+    13.0
+   ],
+   "voice_infl": [
+    10.0,
+    8.0,
+    12.0
+   ],
+   "coord": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "briefs": 18,
+   "parsed": 18,
+   "voices_valid": 18,
+   "kw": "14/18",
+   "flag_sw_ctx": 6.67,
+   "flag_org_ctx": 4.0,
+   "briefs_inflating": "18/18"
+  },
+  "gemma|S5|collapse|b0.5": {
+   "invite": [
+    0.444,
+    0.167,
+    0.722
+   ],
+   "poll": [
+    0.833,
+    0.611,
+    1.0
+   ],
+   "momentum": [
+    1.5,
+    1.167,
+    1.833
+   ],
+   "voices": [
+    11.222,
+    9.222,
+    13.0
+   ],
+   "voice_infl": [
+    10.222,
+    8.222,
+    12.0
+   ],
+   "coord": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "briefs": 18,
+   "parsed": 18,
+   "voices_valid": 18,
+   "kw": "3/18",
+   "flag_sw_ctx": 0.0,
+   "flag_org_ctx": 0.67,
+   "briefs_inflating": "18/18"
+  },
+  "gemma|S5|collapse|b5": {
+   "invite": [
+    0.556,
+    0.278,
+    0.833
+   ],
+   "poll": [
+    0.944,
+    0.833,
+    1.0
+   ],
+   "momentum": [
+    1.611,
+    1.278,
+    1.889
+   ],
+   "voices": [
+    13.333,
+    12.0,
+    14.667
+   ],
+   "voice_infl": [
+    12.333,
+    11.0,
+    13.667
+   ],
+   "coord": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "briefs": 18,
+   "parsed": 18,
+   "voices_valid": 18,
+   "kw": "7/18",
+   "flag_sw_ctx": 3.67,
+   "flag_org_ctx": 2.5,
+   "briefs_inflating": "18/18"
+  },
+  "gemma|S5|collapse|tea": {
+   "invite": [
+    0.444,
+    0.111,
+    0.778
+   ],
+   "poll": [
+    0.833,
+    0.5,
+    1.0
+   ],
+   "momentum": [
+    1.444,
+    1.111,
+    1.778
+   ],
+   "voices": [
+    13.0,
+    11.222,
+    14.5
+   ],
+   "voice_infl": [
+    12.0,
+    10.222,
+    13.5
+   ],
+   "coord": [
+    0.944,
+    0.833,
+    1.0
+   ],
+   "briefs": 18,
+   "parsed": 18,
+   "voices_valid": 18,
+   "kw": "8/18",
+   "flag_sw_ctx": 6.67,
+   "flag_org_ctx": 4.0,
+   "briefs_inflating": "18/18"
+  },
+  "gemma|S5|none|-": {
+   "invite": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "poll": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "momentum": [
+    2.0,
+    2.0,
+    2.0
+   ],
+   "voices": [
+    8.667,
+    7.611,
+    9.611
+   ],
+   "voice_infl": [
+    7.667,
+    6.611,
+    8.611
+   ],
+   "coord": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "briefs": 18,
+   "parsed": 18,
+   "voices_valid": 18,
+   "kw": "0/18",
+   "flag_sw_ctx": 0.0,
+   "flag_org_ctx": 0.0,
+   "briefs_inflating": "18/18"
+  },
+  "gemma|S4|collapse_minus_annotate|b0.5": {
+   "invite": {
+    "diff": 0.056,
+    "lo": 0.0,
+    "hi": 0.167,
+    "units": 6,
+    "units_up": 1,
+    "units_down": 0
+   },
+   "poll": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "units": 6,
+    "units_up": 0,
+    "units_down": 0
+   },
+   "voice_infl": {
+    "diff": 1.611,
+    "lo": 0.833,
+    "hi": 2.5,
+    "units": 6,
+    "units_up": 6,
+    "units_down": 0
+   }
+  },
+  "gemma|S4|collapse_minus_annotate|b5": {
+   "invite": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "units": 6,
+    "units_up": 0,
+    "units_down": 0
+   },
+   "poll": {
+    "diff": -0.611,
+    "lo": -0.833,
+    "hi": -0.333,
+    "units": 6,
+    "units_up": 0,
+    "units_down": 5
+   },
+   "voice_infl": {
+    "diff": -0.667,
+    "lo": -1.667,
+    "hi": 0.333,
+    "units": 6,
+    "units_up": 2,
+    "units_down": 3
+   }
+  },
+  "gemma|S4|collapse_minus_annotate|tea": {
+   "invite": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "units": 6,
+    "units_up": 0,
+    "units_down": 0
+   },
+   "poll": {
+    "diff": -0.833,
+    "lo": -0.944,
+    "hi": -0.722,
+    "units": 6,
+    "units_up": 0,
+    "units_down": 6
+   },
+   "voice_infl": {
+    "diff": -0.833,
+    "lo": -2.056,
+    "hi": 0.667,
+    "units": 6,
+    "units_up": 1,
+    "units_down": 4
+   }
+  },
+  "gemma|S5|collapse_minus_annotate|b0.5": {
+   "invite": {
+    "diff": 0.056,
+    "lo": -0.167,
+    "hi": 0.278,
+    "units": 6,
+    "units_up": 3,
+    "units_down": 2
+   },
+   "poll": {
+    "diff": -0.056,
+    "lo": -0.167,
+    "hi": 0.0,
+    "units": 6,
+    "units_up": 0,
+    "units_down": 1
+   },
+   "voice_infl": {
+    "diff": 1.833,
+    "lo": 0.278,
+    "hi": 3.222,
+    "units": 6,
+    "units_up": 5,
+    "units_down": 1
+   }
+  },
+  "gemma|S5|collapse_minus_annotate|b5": {
+   "invite": {
+    "diff": 0.278,
+    "lo": 0.056,
+    "hi": 0.5,
+    "units": 6,
+    "units_up": 3,
+    "units_down": 0
+   },
+   "poll": {
+    "diff": -0.056,
+    "lo": -0.167,
+    "hi": 0.0,
+    "units": 6,
+    "units_up": 0,
+    "units_down": 1
+   },
+   "voice_infl": {
+    "diff": 2.778,
+    "lo": 1.556,
+    "hi": 4.056,
+    "units": 6,
+    "units_up": 6,
+    "units_down": 0
+   }
+  },
+  "gemma|S5|collapse_minus_annotate|tea": {
+   "invite": {
+    "diff": 0.056,
+    "lo": -0.278,
+    "hi": 0.389,
+    "units": 6,
+    "units_up": 2,
+    "units_down": 1
+   },
+   "poll": {
+    "diff": -0.056,
+    "lo": -0.333,
+    "hi": 0.167,
+    "units": 6,
+    "units_up": 1,
+    "units_down": 1
+   },
+   "voice_infl": {
+    "diff": 2.0,
+    "lo": 0.389,
+    "hi": 3.611,
+    "units": 6,
+    "units_up": 4,
+    "units_down": 1
+   }
+  },
+  "gemma|A|note_only": {
+   "invite": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "poll": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "momentum": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "voices": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "voice_infl": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "coord": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "briefs": 6,
+   "parsed": 6,
+   "voices_valid": 6,
+   "kw": "0/6",
+   "briefs_inflating": "0/6"
+  },
+  "gemma|S4|note_only": {
+   "invite": [
+    0.833,
+    0.611,
+    1.0
+   ],
+   "poll": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "momentum": [
+    1.833,
+    1.611,
+    2.0
+   ],
+   "voices": [
+    10.611,
+    8.778,
+    12.278
+   ],
+   "voice_infl": [
+    9.611,
+    7.778,
+    11.278
+   ],
+   "coord": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "briefs": 18,
+   "parsed": 18,
+   "voices_valid": 18,
+   "kw": "1/18",
+   "briefs_inflating": "17/18"
+  },
+  "gemma|S5|note_only": {
+   "invite": [
+    0.444,
+    0.111,
+    0.778
+   ],
+   "poll": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "momentum": [
+    1.444,
+    1.111,
+    1.778
+   ],
+   "voices": [
+    8.722,
+    8.0,
+    9.444
+   ],
+   "voice_infl": [
+    7.722,
+    7.0,
+    8.444
+   ],
+   "coord": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "briefs": 18,
+   "parsed": 18,
+   "voices_valid": 18,
+   "kw": "4/18",
+   "briefs_inflating": "18/18"
+  },
+  "gemini|A|annotate|b5": {
+   "invite": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "poll": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "momentum": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "voices": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "voice_infl": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "coord": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "briefs": 2,
+   "parsed": 2,
+   "voices_valid": 2,
+   "kw": "0/2",
+   "flag_sw_ctx": 0.0,
+   "flag_org_ctx": 7.0,
+   "briefs_inflating": "0/2"
+  },
+  "gemini|A|annotate|noflag": {
+   "invite": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "poll": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "momentum": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "voices": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "voice_infl": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "coord": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "briefs": 2,
+   "parsed": 2,
+   "voices_valid": 2,
+   "kw": "0/2",
+   "flag_sw_ctx": 0.0,
+   "flag_org_ctx": 0.0,
+   "briefs_inflating": "0/2"
+  },
+  "gemini|A|collapse|b5": {
+   "invite": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "poll": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "momentum": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "voices": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "voice_infl": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "coord": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "briefs": 2,
+   "parsed": 2,
+   "voices_valid": 2,
+   "kw": "0/2",
+   "flag_sw_ctx": 0.0,
+   "flag_org_ctx": 7.0,
+   "briefs_inflating": "0/2"
+  },
+  "gemini|A|none|-": {
+   "invite": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "poll": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "momentum": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "voices": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "voice_infl": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "coord": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "briefs": 2,
+   "parsed": 2,
+   "voices_valid": 2,
+   "kw": "0/2",
+   "flag_sw_ctx": 0.0,
+   "flag_org_ctx": 0.0,
+   "briefs_inflating": "0/2"
+  },
+  "gemini|S4|annotate|b5": {
+   "invite": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "poll": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "momentum": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "voices": [
+    6.667,
+    5.167,
+    8.167
+   ],
+   "voice_infl": [
+    5.667,
+    4.167,
+    7.167
+   ],
+   "coord": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "briefs": 6,
+   "parsed": 6,
+   "voices_valid": 6,
+   "kw": "6/6",
+   "flag_sw_ctx": 24.17,
+   "flag_org_ctx": 2.5,
+   "briefs_inflating": "6/6"
+  },
+  "gemini|S4|annotate|noflag": {
+   "invite": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "poll": [
+    0.667,
+    0.333,
+    1.0
+   ],
+   "momentum": [
+    1.0,
+    0.5,
+    1.5
+   ],
+   "voices": [
+    4.667,
+    1.0,
+    12.0
+   ],
+   "voice_infl": [
+    3.667,
+    0.0,
+    11.0
+   ],
+   "coord": [
+    0.833,
+    0.5,
+    1.0
+   ],
+   "briefs": 6,
+   "parsed": 6,
+   "voices_valid": 6,
+   "kw": "3/6",
+   "flag_sw_ctx": 0.0,
+   "flag_org_ctx": 0.0,
+   "briefs_inflating": "1/6"
+  },
+  "gemini|S4|collapse|b5": {
+   "invite": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "poll": [
+    0.167,
+    0.0,
+    0.5
+   ],
+   "momentum": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "voices": [
+    5.667,
+    3.333,
+    8.0
+   ],
+   "voice_infl": [
+    4.667,
+    2.333,
+    7.0
+   ],
+   "coord": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "briefs": 6,
+   "parsed": 6,
+   "voices_valid": 6,
+   "kw": "6/6",
+   "flag_sw_ctx": 24.17,
+   "flag_org_ctx": 2.5,
+   "briefs_inflating": "5/6"
+  },
+  "gemini|S4|none|-": {
+   "invite": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "poll": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "momentum": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "voices": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "voice_infl": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "coord": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "briefs": 6,
+   "parsed": 6,
+   "voices_valid": 6,
+   "kw": "2/6",
+   "flag_sw_ctx": 0.0,
+   "flag_org_ctx": 0.0,
+   "briefs_inflating": "0/6"
+  },
+  "gemini|S5|annotate|b5": {
+   "invite": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "poll": [
+    0.5,
+    0.167,
+    0.833
+   ],
+   "momentum": [
+    0.667,
+    0.333,
+    1.0
+   ],
+   "voices": [
+    9.333,
+    2.833,
+    16.667
+   ],
+   "voice_infl": [
+    8.333,
+    1.833,
+    15.667
+   ],
+   "coord": [
+    0.833,
+    0.5,
+    1.0
+   ],
+   "briefs": 6,
+   "parsed": 6,
+   "voices_valid": 6,
+   "kw": "4/6",
+   "flag_sw_ctx": 3.67,
+   "flag_org_ctx": 2.5,
+   "briefs_inflating": "3/6"
+  },
+  "gemini|S5|annotate|noflag": {
+   "invite": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "poll": [
+    0.667,
+    0.333,
+    1.0
+   ],
+   "momentum": [
+    0.667,
+    0.333,
+    1.0
+   ],
+   "voices": [
+    4.5,
+    1.0,
+    11.5
+   ],
+   "voice_infl": [
+    3.5,
+    0.0,
+    10.5
+   ],
+   "coord": [
+    0.833,
+    0.5,
+    1.0
+   ],
+   "briefs": 6,
+   "parsed": 6,
+   "voices_valid": 6,
+   "kw": "3/6",
+   "flag_sw_ctx": 0.0,
+   "flag_org_ctx": 0.0,
+   "briefs_inflating": "1/6"
+  },
+  "gemini|S5|collapse|b5": {
+   "invite": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "poll": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "momentum": [
+    1.167,
+    1.0,
+    1.5
+   ],
+   "voices": [
+    13.0,
+    6.8,
+    17.8
+   ],
+   "voice_infl": [
+    12.0,
+    5.8,
+    16.8
+   ],
+   "coord": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "briefs": 6,
+   "parsed": 6,
+   "voices_valid": 5,
+   "kw": "4/6",
+   "flag_sw_ctx": 3.67,
+   "flag_org_ctx": 2.5,
+   "briefs_inflating": "4/5"
+  },
+  "gemini|S5|none|-": {
+   "invite": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "poll": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "momentum": [
+    1.167,
+    1.0,
+    1.5
+   ],
+   "voices": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "voice_infl": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "coord": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "briefs": 6,
+   "parsed": 6,
+   "voices_valid": 6,
+   "kw": "1/6",
+   "flag_sw_ctx": 0.0,
+   "flag_org_ctx": 0.0,
+   "briefs_inflating": "0/6"
+  },
+  "gemini|S4|collapse_minus_annotate|b5": {
+   "invite": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "units": 6,
+    "units_up": 0,
+    "units_down": 0
+   },
+   "poll": {
+    "diff": 0.167,
+    "lo": 0.0,
+    "hi": 0.5,
+    "units": 6,
+    "units_up": 1,
+    "units_down": 0
+   },
+   "voice_infl": {
+    "diff": -1.0,
+    "lo": -3.0,
+    "hi": 0.0,
+    "units": 6,
+    "units_up": 0,
+    "units_down": 1
+   }
+  },
+  "gemini|S5|collapse_minus_annotate|b5": {
+   "invite": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "units": 6,
+    "units_up": 0,
+    "units_down": 0
+   },
+   "poll": {
+    "diff": 0.5,
+    "lo": 0.167,
+    "hi": 0.833,
+    "units": 6,
+    "units_up": 3,
+    "units_down": 0
+   },
+   "voice_infl": {
+    "diff": 6.4,
+    "lo": 0.0,
+    "hi": 13.6,
+    "units": 5,
+    "units_up": 2,
+    "units_down": 0
+   }
+  },
+  "gemini|partial_flag_pooled": {
+   "flagged_b5_inflating": "18/23",
+   "range": [
+    3.0,
+    22.0
+   ]
+  },
+  "gemini|note_only_pooled": "2/12"
+ },
+ "k_ablation": {
+  "gemma|k=1|annotate|b5": {
+   "invite": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "poll": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "momentum": [
+    0.222,
+    0.111,
+    0.333
+   ],
+   "voices": [
+    1.056,
+    1.0,
+    1.167
+   ],
+   "voice_infl": [
+    0.056,
+    0.0,
+    0.167
+   ],
+   "briefs": 18,
+   "parsed": 18,
+   "voices_valid": 18,
+   "kw": "6/18",
+   "flag_sw_ctx": 10.0
+  },
+  "gemma|k=1|annotate|tea": {
+   "invite": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "poll": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "momentum": [
+    0.389,
+    0.333,
+    0.5
+   ],
+   "voices": [
+    1.056,
+    1.0,
+    1.167
+   ],
+   "voice_infl": [
+    0.056,
+    0.0,
+    0.167
+   ],
+   "briefs": 18,
+   "parsed": 18,
+   "voices_valid": 18,
+   "kw": "6/18",
+   "flag_sw_ctx": 10.0
+  },
+  "gemma|k=1|collapse|b5": {
+   "invite": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "poll": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "momentum": [
+    0.111,
+    0.0,
+    0.222
+   ],
+   "voices": [
+    0.944,
+    0.833,
+    1.0
+   ],
+   "voice_infl": [
+    -0.056,
+    -0.167,
+    0.0
+   ],
+   "briefs": 18,
+   "parsed": 18,
+   "voices_valid": 18,
+   "kw": "6/18",
+   "flag_sw_ctx": 10.0
+  },
+  "gemma|k=1|collapse|tea": {
+   "invite": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "poll": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "momentum": [
+    0.278,
+    0.111,
+    0.444
+   ],
+   "voices": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "voice_infl": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "briefs": 18,
+   "parsed": 18,
+   "voices_valid": 18,
+   "kw": "7/18",
+   "flag_sw_ctx": 10.0
+  },
+  "gemma|k=1|none|-": {
+   "invite": [
+    0.278,
+    0.056,
+    0.5
+   ],
+   "poll": [
+    0.5,
+    0.389,
+    0.611
+   ],
+   "momentum": [
+    1.222,
+    1.056,
+    1.444
+   ],
+   "voices": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "voice_infl": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "briefs": 18,
+   "parsed": 18,
+   "voices_valid": 18,
+   "kw": "0/18",
+   "flag_sw_ctx": 0.0
+  },
+  "gemma|k=3|annotate|b5": {
+   "invite": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "poll": [
+    0.611,
+    0.333,
+    0.889
+   ],
+   "momentum": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "voices": [
+    3.222,
+    3.0,
+    3.444
+   ],
+   "voice_infl": [
+    2.222,
+    2.0,
+    2.444
+   ],
+   "briefs": 18,
+   "parsed": 18,
+   "voices_valid": 18,
+   "kw": "8/18",
+   "flag_sw_ctx": 5.0
+  },
+  "gemma|k=3|annotate|tea": {
+   "invite": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "poll": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "momentum": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "voices": [
+    3.222,
+    3.056,
+    3.444
+   ],
+   "voice_infl": [
+    2.222,
+    2.056,
+    2.444
+   ],
+   "briefs": 18,
+   "parsed": 18,
+   "voices_valid": 18,
+   "kw": "18/18",
+   "flag_sw_ctx": 30.0
+  },
+  "gemma|k=3|collapse|b5": {
+   "invite": [
+    0.167,
+    0.0,
+    0.389
+   ],
+   "poll": [
+    0.611,
+    0.333,
+    0.889
+   ],
+   "momentum": [
+    1.278,
+    1.111,
+    1.444
+   ],
+   "voices": [
+    3.556,
+    3.389,
+    3.778
+   ],
+   "voice_infl": [
+    2.556,
+    2.389,
+    2.778
+   ],
+   "briefs": 18,
+   "parsed": 18,
+   "voices_valid": 18,
+   "kw": "6/18",
+   "flag_sw_ctx": 5.0
+  },
+  "gemma|k=3|collapse|tea": {
+   "invite": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "poll": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "momentum": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "voices": [
+    0.944,
+    0.833,
+    1.0
+   ],
+   "voice_infl": [
+    -0.056,
+    -0.167,
+    0.0
+   ],
+   "briefs": 18,
+   "parsed": 18,
+   "voices_valid": 18,
+   "kw": "18/18",
+   "flag_sw_ctx": 30.0
+  },
+  "gemma|k=3|none|-": {
+   "invite": [
+    0.722,
+    0.5,
+    0.944
+   ],
+   "poll": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "momentum": [
+    1.722,
+    1.5,
+    1.944
+   ],
+   "voices": [
+    3.111,
+    3.0,
+    3.222
+   ],
+   "voice_infl": [
+    2.111,
+    2.0,
+    2.222
+   ],
+   "briefs": 18,
+   "parsed": 18,
+   "voices_valid": 18,
+   "kw": "0/18",
+   "flag_sw_ctx": 0.0
+  },
+  "gemma|k=10|annotate|b5": {
+   "invite": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "poll": [
+    0.167,
+    0.056,
+    0.278
+   ],
+   "momentum": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "voices": [
+    6.778,
+    6.556,
+    6.944
+   ],
+   "voice_infl": [
+    5.778,
+    5.556,
+    5.944
+   ],
+   "briefs": 18,
+   "parsed": 18,
+   "voices_valid": 18,
+   "kw": "18/18",
+   "flag_sw_ctx": 29.5
+  },
+  "gemma|k=10|annotate|tea": {
+   "invite": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "poll": [
+    0.333,
+    0.111,
+    0.556
+   ],
+   "momentum": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "voices": [
+    6.778,
+    6.667,
+    6.889
+   ],
+   "voice_infl": [
+    5.778,
+    5.667,
+    5.889
+   ],
+   "briefs": 18,
+   "parsed": 18,
+   "voices_valid": 18,
+   "kw": "18/18",
+   "flag_sw_ctx": 29.5
+  },
+  "gemma|k=10|collapse|b5": {
+   "invite": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "poll": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "momentum": [
+    0.056,
+    0.0,
+    0.167
+   ],
+   "voices": [
+    1.5,
+    1.0,
+    2.5
+   ],
+   "voice_infl": [
+    0.5,
+    0.0,
+    1.5
+   ],
+   "briefs": 18,
+   "parsed": 18,
+   "voices_valid": 18,
+   "kw": "18/18",
+   "flag_sw_ctx": 29.5
+  },
+  "gemma|k=10|collapse|tea": {
+   "invite": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "poll": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "momentum": [
+    0.222,
+    0.0,
+    0.556
+   ],
+   "voices": [
+    1.5,
+    1.0,
+    2.5
+   ],
+   "voice_infl": [
+    0.5,
+    0.0,
+    1.5
+   ],
+   "briefs": 18,
+   "parsed": 18,
+   "voices_valid": 18,
+   "kw": "18/18",
+   "flag_sw_ctx": 29.5
+  },
+  "gemma|k=10|none|-": {
+   "invite": [
+    0.833,
+    0.611,
+    1.0
+   ],
+   "poll": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "momentum": [
+    1.944,
+    1.833,
+    2.0
+   ],
+   "voices": [
+    7.111,
+    6.5,
+    7.833
+   ],
+   "voice_infl": [
+    6.111,
+    5.5,
+    6.833
+   ],
+   "briefs": 18,
+   "parsed": 18,
+   "voices_valid": 18,
+   "kw": "0/18",
+   "flag_sw_ctx": 0.0
+  },
+  "gemma|k=30|annotate|b5": {
+   "invite": [
+    0.889,
+    0.667,
+    1.0
+   ],
+   "poll": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "momentum": [
+    1.889,
+    1.667,
+    2.0
+   ],
+   "voices": [
+    15.167,
+    10.278,
+    20.056
+   ],
+   "voice_infl": [
+    14.167,
+    9.278,
+    19.056
+   ],
+   "briefs": 18,
+   "parsed": 18,
+   "voices_valid": 18,
+   "kw": "0/18",
+   "flag_sw_ctx": 0.0
+  },
+  "gemma|k=30|annotate|tea": {
+   "invite": [
+    0.889,
+    0.667,
+    1.0
+   ],
+   "poll": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "momentum": [
+    1.889,
+    1.667,
+    2.0
+   ],
+   "voices": [
+    17.5,
+    12.833,
+    21.111
+   ],
+   "voice_infl": [
+    16.5,
+    11.833,
+    20.111
+   ],
+   "briefs": 18,
+   "parsed": 18,
+   "voices_valid": 18,
+   "kw": "0/18",
+   "flag_sw_ctx": 0.0
+  },
+  "gemma|k=30|collapse|b5": {
+   "invite": [
+    0.944,
+    0.833,
+    1.0
+   ],
+   "poll": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "momentum": [
+    1.944,
+    1.833,
+    2.0
+   ],
+   "voices": [
+    22.333,
+    21.833,
+    22.944
+   ],
+   "voice_infl": [
+    21.333,
+    20.833,
+    21.944
+   ],
+   "briefs": 18,
+   "parsed": 18,
+   "voices_valid": 18,
+   "kw": "0/18",
+   "flag_sw_ctx": 0.0
+  },
+  "gemma|k=30|collapse|tea": {
+   "invite": [
+    0.833,
+    0.611,
+    1.0
+   ],
+   "poll": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "momentum": [
+    1.889,
+    1.778,
+    2.0
+   ],
+   "voices": [
+    22.167,
+    21.222,
+    22.944
+   ],
+   "voice_infl": [
+    21.167,
+    20.222,
+    21.944
+   ],
+   "briefs": 18,
+   "parsed": 18,
+   "voices_valid": 18,
+   "kw": "0/18",
+   "flag_sw_ctx": 0.0
+  },
+  "gemma|k=30|none|-": {
+   "invite": [
+    0.778,
+    0.444,
+    1.0
+   ],
+   "poll": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "momentum": [
+    1.889,
+    1.667,
+    2.0
+   ],
+   "voices": [
+    11.944,
+    7.444,
+    16.611
+   ],
+   "voice_infl": [
+    10.944,
+    6.444,
+    15.611
+   ],
+   "briefs": 18,
+   "parsed": 18,
+   "voices_valid": 18,
+   "kw": "0/18",
+   "flag_sw_ctx": 0.0
+  },
+  "gemma|paired_k3_minus_k1": {
+   "invite": {
+    "diff": 0.444,
+    "lo": 0.111,
+    "hi": 0.722,
+    "units": 6,
+    "units_up": 5,
+    "units_down": 1
+   },
+   "poll": {
+    "diff": 0.5,
+    "lo": 0.389,
+    "hi": 0.611,
+    "units": 6,
+    "units_up": 6,
+    "units_down": 0
+   },
+   "momentum": {
+    "diff": 0.5,
+    "lo": 0.165,
+    "hi": 0.778,
+    "units": 6,
+    "units_up": 5,
+    "units_down": 1
+   }
+  },
+  "gemma|paired_k30_minus_k10": {
+   "invite": {
+    "diff": -0.056,
+    "lo": -0.222,
+    "hi": 0.111,
+    "units": 6,
+    "units_up": 1,
+    "units_down": 2
+   },
+   "poll": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "units": 6,
+    "units_up": 0,
+    "units_down": 0
+   },
+   "momentum": {
+    "diff": -0.056,
+    "lo": -0.333,
+    "hi": 0.167,
+    "units": 6,
+    "units_up": 1,
+    "units_down": 1
+   }
+  },
+  "gemini|k=1|none|-": {
+   "invite": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "poll": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "momentum": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "voices": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "voice_infl": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "briefs": 6,
+   "parsed": 6,
+   "voices_valid": 6,
+   "kw": "2/6",
+   "flag_sw_ctx": 0.0
+  },
+  "gemini|k=3|none|-": {
+   "invite": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "poll": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "momentum": [
+    0.333,
+    0.0,
+    0.667
+   ],
+   "voices": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "voice_infl": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "briefs": 6,
+   "parsed": 6,
+   "voices_valid": 6,
+   "kw": "6/6",
+   "flag_sw_ctx": 0.0
+  },
+  "gemini|k=10|none|-": {
+   "invite": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "poll": [
+    0.5,
+    0.167,
+    0.833
+   ],
+   "momentum": [
+    0.5,
+    0.167,
+    0.833
+   ],
+   "voices": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "voice_infl": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "briefs": 6,
+   "parsed": 6,
+   "voices_valid": 6,
+   "kw": "4/6",
+   "flag_sw_ctx": 0.0
+  },
+  "gemini|k=30|none|-": {
+   "invite": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "poll": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "momentum": [
+    1.167,
+    1.0,
+    1.5
+   ],
+   "voices": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "voice_infl": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "briefs": 6,
+   "parsed": 6,
+   "voices_valid": 6,
+   "kw": "1/6",
+   "flag_sw_ctx": 0.0
+  },
+  "gemini|paired_k3_minus_k1": {
+   "invite": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "units": 6,
+    "units_up": 0,
+    "units_down": 0
+   },
+   "poll": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "units": 6,
+    "units_up": 0,
+    "units_down": 0
+   },
+   "momentum": {
+    "diff": 0.333,
+    "lo": 0.0,
+    "hi": 0.667,
+    "units": 6,
+    "units_up": 2,
+    "units_down": 0
+   }
+  },
+  "gemini|paired_k30_minus_k10": {
+   "invite": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "units": 6,
+    "units_up": 0,
+    "units_down": 0
+   },
+   "poll": {
+    "diff": 0.5,
+    "lo": 0.167,
+    "hi": 0.833,
+    "units": 6,
+    "units_up": 3,
+    "units_down": 0
+   },
+   "momentum": {
+    "diff": 0.667,
+    "lo": 0.167,
+    "hi": 1.333,
+    "units": 6,
+    "units_up": 3,
+    "units_down": 0
+   }
+  },
+  "gemma|k_voices_dist": {
+   "1": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "3": [
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    4,
+    4
+   ],
+   "10": [
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    8,
+    8,
+    8,
+    8,
+    8,
+    10
+   ],
+   "30": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    5,
+    6,
+    11,
+    11,
+    12,
+    18,
+    18,
+    18,
+    21,
+    22,
+    22,
+    23,
+    23
+   ]
+  }
+ },
+ "overcorrection": {
+  "gemma|baseline": {
+   "沈伯洋": {
+    "voices": 13.281,
+    "momentum": 2.0
+   },
+   "蔣萬安": {
+    "voices": 11.5,
+    "momentum": 2.0
+   }
+  },
+  "gemma|baseline_asym_shen_minus_chiang": {
+   "voices": {
+    "diff": 1.781,
+    "lo": 0.53,
+    "hi": 2.969,
+    "n_a": 16,
+    "n_b": 16
+   },
+   "momentum": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n_a": 16,
+    "n_b": 16
+   }
+  },
+  "gemma|oc2_voices_valid": {
+   "total": "383/384",
+   "by_cell": {
+    "沈伯洋|dev|annotate|b5": "16/16",
+    "沈伯洋|dev|annotate|noflag": "16/16",
+    "沈伯洋|dev|annotate|tea": "16/16",
+    "沈伯洋|dev|collapse|b5": "16/16",
+    "沈伯洋|dev|collapse|tea": "16/16",
+    "沈伯洋|dev|none|-": "16/16",
+    "沈伯洋|heldout|annotate|b5": "16/16",
+    "沈伯洋|heldout|annotate|noflag": "16/16",
+    "沈伯洋|heldout|annotate|tea": "16/16",
+    "沈伯洋|heldout|collapse|b5": "16/16",
+    "沈伯洋|heldout|collapse|tea": "16/16",
+    "沈伯洋|heldout|none|-": "16/16",
+    "蔣萬安|dev|annotate|b5": "16/16",
+    "蔣萬安|dev|annotate|noflag": "15/16",
+    "蔣萬安|dev|annotate|tea": "16/16",
+    "蔣萬安|dev|collapse|b5": "16/16",
+    "蔣萬安|dev|collapse|tea": "16/16",
+    "蔣萬安|dev|none|-": "16/16",
+    "蔣萬安|heldout|annotate|b5": "16/16",
+    "蔣萬安|heldout|annotate|noflag": "16/16",
+    "蔣萬安|heldout|annotate|tea": "16/16",
+    "蔣萬安|heldout|collapse|b5": "16/16",
+    "蔣萬安|heldout|collapse|tea": "16/16",
+    "蔣萬安|heldout|none|-": "16/16"
+   }
+  },
+  "gemma|oc2_available": {
+   "contexts": {
+    "沈伯洋": 16,
+    "蔣萬安": 16
+   },
+   "annotate|b5": {
+    "沈伯洋": [
+     3.219,
+     2.375,
+     4.094
+    ],
+    "蔣萬安": [
+     2.375,
+     1.594,
+     3.156
+    ],
+    "asym": {
+     "diff": 0.844,
+     "lo": -0.281,
+     "hi": 2.031,
+     "n_a": 16,
+     "n_b": 16
+    }
+   },
+   "annotate|noflag": {
+    "沈伯洋": [
+     3.562,
+     2.75,
+     4.344
+    ],
+    "蔣萬安": [
+     2.844,
+     1.938,
+     3.938
+    ],
+    "asym": {
+     "diff": 0.719,
+     "lo": -0.625,
+     "hi": 1.906,
+     "n_a": 16,
+     "n_b": 16
+    }
+   },
+   "annotate|tea": {
+    "沈伯洋": [
+     -0.562,
+     -1.312,
+     0.25
+    ],
+    "蔣萬安": [
+     1.062,
+     0.469,
+     1.656
+    ],
+    "asym": {
+     "diff": -1.625,
+     "lo": -2.625,
+     "hi": -0.625,
+     "n_a": 16,
+     "n_b": 16
+    }
+   },
+   "collapse|b5": {
+    "沈伯洋": [
+     4.969,
+     4.187,
+     5.719
+    ],
+    "蔣萬安": [
+     3.188,
+     2.094,
+     4.188
+    ],
+    "asym": {
+     "diff": 1.781,
+     "lo": 0.5,
+     "hi": 3.094,
+     "n_a": 16,
+     "n_b": 16
+    }
+   },
+   "collapse|tea": {
+    "沈伯洋": [
+     -0.656,
+     -1.375,
+     0.031
+    ],
+    "蔣萬安": [
+     1.719,
+     1.062,
+     2.438
+    ],
+    "asym": {
+     "diff": -2.375,
+     "lo": -3.406,
+     "hi": -1.438,
+     "n_a": 16,
+     "n_b": 16
+    }
+   },
+   "baseline_asym": {
+    "diff": 1.781,
+    "lo": 0.53,
+    "hi": 2.969,
+    "n_a": 16,
+    "n_b": 16
+   }
+  },
+  "gemma|oc2_complete_case": {
+   "contexts": {
+    "沈伯洋": 16,
+    "蔣萬安": 15
+   },
+   "annotate|b5": {
+    "沈伯洋": [
+     3.219,
+     2.375,
+     4.094
+    ],
+    "蔣萬安": [
+     2.367,
+     1.533,
+     3.267
+    ],
+    "asym": {
+     "diff": 0.852,
+     "lo": -0.338,
+     "hi": 2.06,
+     "n_a": 16,
+     "n_b": 15
+    }
+   },
+   "annotate|noflag": {
+    "沈伯洋": [
+     3.562,
+     2.75,
+     4.344
+    ],
+    "蔣萬安": [
+     2.467,
+     1.733,
+     3.267
+    ],
+    "asym": {
+     "diff": 1.096,
+     "lo": -0.017,
+     "hi": 2.154,
+     "n_a": 16,
+     "n_b": 15
+    }
+   },
+   "annotate|tea": {
+    "沈伯洋": [
+     -0.562,
+     -1.312,
+     0.25
+    ],
+    "蔣萬安": [
+     1.0,
+     0.367,
+     1.633
+    ],
+    "asym": {
+     "diff": -1.562,
+     "lo": -2.55,
+     "hi": -0.498,
+     "n_a": 16,
+     "n_b": 15
+    }
+   },
+   "collapse|b5": {
+    "沈伯洋": [
+     4.969,
+     4.187,
+     5.719
+    ],
+    "蔣萬安": [
+     3.033,
+     1.999,
+     4.067
+    ],
+    "asym": {
+     "diff": 1.935,
+     "lo": 0.619,
+     "hi": 3.279,
+     "n_a": 16,
+     "n_b": 15
+    }
+   },
+   "collapse|tea": {
+    "沈伯洋": [
+     -0.656,
+     -1.375,
+     0.031
+    ],
+    "蔣萬安": [
+     1.633,
+     0.967,
+     2.367
+    ],
+    "asym": {
+     "diff": -2.29,
+     "lo": -3.317,
+     "hi": -1.306,
+     "n_a": 16,
+     "n_b": 15
+    }
+   },
+   "baseline_asym": {
+    "diff": 1.848,
+    "lo": 0.581,
+    "hi": 3.058,
+    "n_a": 16,
+    "n_b": 15
+   }
+  },
+  "gemma|flagged_supportive_of_24": {
+   "沈伯洋|b5|dev": 2.25,
+   "沈伯洋|b5|heldout": 1.25,
+   "沈伯洋|noflag|dev": 0.0,
+   "沈伯洋|noflag|heldout": 0.0,
+   "沈伯洋|tea|dev": 10.62,
+   "沈伯洋|tea|heldout": 8.5,
+   "蔣萬安|b5|dev": 0.25,
+   "蔣萬安|b5|heldout": 2.5,
+   "蔣萬安|noflag|dev": 0.0,
+   "蔣萬安|noflag|heldout": 0.0,
+   "蔣萬安|tea|dev": 3.25,
+   "蔣萬安|tea|heldout": 2.75
+  },
+  "gemini|baseline": {
+   "沈伯洋": {
+    "voices": 24.467,
+    "momentum": 2.938
+   },
+   "蔣萬安": {
+    "voices": 14.812,
+    "momentum": 2.625
+   }
+  },
+  "gemini|baseline_asym_shen_minus_chiang": {
+   "voices": {
+    "diff": 9.654,
+    "lo": 6.421,
+    "hi": 12.754,
+    "n_a": 15,
+    "n_b": 16
+   },
+   "momentum": {
+    "diff": 0.312,
+    "lo": 0.062,
+    "hi": 0.562,
+    "n_a": 16,
+    "n_b": 16
+   }
+  },
+  "gemini|oc2_voices_valid": {
+   "total": "112/128",
+   "by_cell": {
+    "沈伯洋|dev|annotate|b5": "7/8",
+    "沈伯洋|dev|annotate|noflag": "8/8",
+    "沈伯洋|dev|collapse|b5": "8/8",
+    "沈伯洋|dev|none|-": "8/8",
+    "沈伯洋|heldout|annotate|b5": "3/8",
+    "沈伯洋|heldout|annotate|noflag": "4/8",
+    "沈伯洋|heldout|collapse|b5": "5/8",
+    "沈伯洋|heldout|none|-": "7/8",
+    "蔣萬安|dev|annotate|b5": "7/8",
+    "蔣萬安|dev|annotate|noflag": "8/8",
+    "蔣萬安|dev|collapse|b5": "8/8",
+    "蔣萬安|dev|none|-": "8/8",
+    "蔣萬安|heldout|annotate|b5": "8/8",
+    "蔣萬安|heldout|annotate|noflag": "8/8",
+    "蔣萬安|heldout|collapse|b5": "7/8",
+    "蔣萬安|heldout|none|-": "8/8"
+   }
+  },
+  "gemini|oc2_available": {
+   "contexts": {
+    "沈伯洋": 16,
+    "蔣萬安": 16
+   },
+   "annotate|b5": {
+    "沈伯洋": [
+     -2.0,
+     -4.5,
+     0.5
+    ],
+    "蔣萬安": [
+     -1.267,
+     -2.867,
+     0.333
+    ],
+    "asym": {
+     "diff": -0.733,
+     "lo": -3.767,
+     "hi": 2.3,
+     "n_a": 10,
+     "n_b": 15
+    }
+   },
+   "annotate|noflag": {
+    "沈伯洋": [
+     -0.75,
+     -2.5,
+     0.833
+    ],
+    "蔣萬安": [
+     -0.875,
+     -2.938,
+     1.125
+    ],
+    "asym": {
+     "diff": 0.125,
+     "lo": -2.458,
+     "hi": 2.771,
+     "n_a": 12,
+     "n_b": 16
+    }
+   },
+   "collapse|b5": {
+    "沈伯洋": [
+     0.385,
+     -1.615,
+     2.692
+    ],
+    "蔣萬安": [
+     -1.133,
+     -3.6,
+     1.333
+    ],
+    "asym": {
+     "diff": 1.518,
+     "lo": -1.651,
+     "hi": 4.862,
+     "n_a": 13,
+     "n_b": 15
+    }
+   },
+   "baseline_asym": {
+    "diff": 9.654,
+    "lo": 6.421,
+    "hi": 12.754,
+    "n_a": 15,
+    "n_b": 16
+   }
+  },
+  "gemini|oc2_complete_case": {
+   "contexts": {
+    "沈伯洋": 9,
+    "蔣萬安": 14
+   },
+   "annotate|b5": {
+    "沈伯洋": [
+     -2.556,
+     -5.222,
+     0.0
+    ],
+    "蔣萬安": [
+     -0.857,
+     -2.357,
+     0.643
+    ],
+    "asym": {
+     "diff": -1.698,
+     "lo": -4.698,
+     "hi": 1.222,
+     "n_a": 9,
+     "n_b": 14
+    }
+   },
+   "annotate|noflag": {
+    "沈伯洋": [
+     -0.889,
+     -3.111,
+     1.111
+    ],
+    "蔣萬安": [
+     -0.571,
+     -2.714,
+     1.5
+    ],
+    "asym": {
+     "diff": -0.317,
+     "lo": -3.334,
+     "hi": 2.699,
+     "n_a": 9,
+     "n_b": 14
+    }
+   },
+   "collapse|b5": {
+    "沈伯洋": [
+     1.444,
+     -0.667,
+     4.222
+    ],
+    "蔣萬安": [
+     -1.786,
+     -4.071,
+     0.357
+    ],
+    "asym": {
+     "diff": 3.23,
+     "lo": 0.055,
+     "hi": 6.754,
+     "n_a": 9,
+     "n_b": 14
+    }
+   },
+   "baseline_asym": {
+    "diff": 10.286,
+    "lo": 6.746,
+    "hi": 13.929,
+    "n_a": 9,
+    "n_b": 14
+   }
+  },
+  "gemini|flagged_supportive_of_24": {
+   "沈伯洋|b5|dev": 2.25,
+   "沈伯洋|b5|heldout": 1.25,
+   "沈伯洋|noflag|dev": 0.0,
+   "沈伯洋|noflag|heldout": 0.0,
+   "蔣萬安|b5|dev": 0.25,
+   "蔣萬安|b5|heldout": 2.5,
+   "蔣萬安|noflag|dev": 0.0,
+   "蔣萬安|noflag|heldout": 0.0
+  }
+ },
+ "sprint_controls": {
+  "chaink|k=1": {
+   "invite": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "poll": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "momentum": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "voices": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "voice_infl": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "coord": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "briefs": 18,
+   "parsed": 18,
+   "voices_valid": 18,
+   "kw": "5/18"
+  },
+  "chaink|k=30": {
+   "invite": [
+    0.333,
+    0.111,
+    0.556
+   ],
+   "poll": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "momentum": [
+    1.556,
+    1.389,
+    1.778
+   ],
+   "voices": [
+    21.611,
+    21.167,
+    22.0
+   ],
+   "voice_infl": [
+    20.611,
+    20.167,
+    21.0
+   ],
+   "coord": [
+    0.556,
+    0.278,
+    0.833
+   ],
+   "briefs": 18,
+   "parsed": 18,
+   "voices_valid": 18,
+   "kw": "8/18"
+  },
+  "chainctlk|k=1": {
+   "invite": [
+    0.556,
+    0.278,
+    0.778
+   ],
+   "poll": [
+    0.833,
+    0.722,
+    0.944
+   ],
+   "momentum": [
+    1.556,
+    1.278,
+    1.778
+   ],
+   "voices": [
+    NaN,
+    NaN,
+    NaN
+   ],
+   "voice_infl": [
+    NaN,
+    NaN,
+    NaN
+   ],
+   "coord": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "briefs": 18,
+   "parsed": 18,
+   "voices_valid": 0,
+   "kw": "0/18"
+  },
+  "chainctlk|k=30": {
+   "invite": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "poll": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "momentum": [
+    2.0,
+    2.0,
+    2.0
+   ],
+   "voices": [
+    NaN,
+    NaN,
+    NaN
+   ],
+   "voice_infl": [
+    NaN,
+    NaN,
+    NaN
+   ],
+   "coord": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "briefs": 18,
+   "parsed": 18,
+   "voices_valid": 0,
+   "kw": "0/18"
+  },
+  "chaink_minus_twocall|k=1": {
+   "invite": {
+    "diff": -0.278,
+    "lo": -0.5,
+    "hi": -0.056,
+    "units": 6,
+    "units_up": 0,
+    "units_down": 3
+   },
+   "poll": {
+    "diff": -0.5,
+    "lo": -0.611,
+    "hi": -0.389,
+    "units": 6,
+    "units_up": 0,
+    "units_down": 6
+   },
+   "momentum": {
+    "diff": -1.222,
+    "lo": -1.444,
+    "hi": -1.056,
+    "units": 6,
+    "units_up": 0,
+    "units_down": 6
+   }
+  },
+  "chaink_minus_twocall|k=30": {
+   "invite": {
+    "diff": -0.444,
+    "lo": -0.778,
+    "hi": -0.111,
+    "units": 6,
+    "units_up": 0,
+    "units_down": 4
+   },
+   "poll": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "units": 6,
+    "units_up": 0,
+    "units_down": 0
+   },
+   "momentum": {
+    "diff": -0.333,
+    "lo": -0.556,
+    "hi": -0.111,
+    "units": 6,
+    "units_up": 0,
+    "units_down": 4
+   }
+  },
+  "b3|S4|annotate|nf5": {
+   "invite": [
+    0.5,
+    0.222,
+    0.722
+   ],
+   "poll": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "momentum": [
+    1.611,
+    1.278,
+    1.889
+   ],
+   "voices": [
+    10.667,
+    9.111,
+    12.111
+   ],
+   "voice_infl": [
+    9.667,
+    8.111,
+    11.111
+   ],
+   "coord": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "briefs": 18,
+   "parsed": 18,
+   "voices_valid": 18,
+   "kw": "1/18",
+   "flag_sw_ctx": 0.0,
+   "flag_org_ctx": 0.0
+  },
+  "b3|S4|annotate|detector_b5_minus_nf5": {
+   "voice_infl": {
+    "diff": -3.222,
+    "lo": -5.668,
+    "hi": -1.278,
+    "units": 6,
+    "units_up": 0,
+    "units_down": 6
+   },
+   "invite": {
+    "diff": -0.5,
+    "lo": -0.722,
+    "hi": -0.222,
+    "units": 6,
+    "units_up": 0,
+    "units_down": 5
+   },
+   "poll": {
+    "diff": -0.278,
+    "lo": -0.444,
+    "hi": -0.111,
+    "units": 6,
+    "units_up": 0,
+    "units_down": 4
+   }
+  },
+  "b3|S4|annotate|rand5": {
+   "invite": [
+    0.167,
+    0.056,
+    0.278
+   ],
+   "poll": [
+    0.944,
+    0.833,
+    1.0
+   ],
+   "momentum": [
+    1.5,
+    1.278,
+    1.667
+   ],
+   "voices": [
+    11.167,
+    9.0,
+    12.889
+   ],
+   "voice_infl": [
+    10.167,
+    8.0,
+    11.889
+   ],
+   "coord": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "briefs": 18,
+   "parsed": 18,
+   "voices_valid": 18,
+   "kw": "8/18",
+   "flag_sw_ctx": 11.33,
+   "flag_org_ctx": 10.33
+  },
+  "b3|S4|annotate|detector_b5_minus_rand5": {
+   "voice_infl": {
+    "diff": -3.722,
+    "lo": -5.611,
+    "hi": -1.833,
+    "units": 6,
+    "units_up": 1,
+    "units_down": 5
+   },
+   "invite": {
+    "diff": -0.167,
+    "lo": -0.278,
+    "hi": -0.056,
+    "units": 6,
+    "units_up": 0,
+    "units_down": 3
+   },
+   "poll": {
+    "diff": -0.222,
+    "lo": -0.333,
+    "hi": -0.111,
+    "units": 6,
+    "units_up": 0,
+    "units_down": 4
+   }
+  },
+  "b3|S4|collapse|nf5": {
+   "invite": [
+    0.667,
+    0.333,
+    0.944
+   ],
+   "poll": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "momentum": [
+    1.722,
+    1.389,
+    2.0
+   ],
+   "voices": [
+    12.611,
+    11.056,
+    13.833
+   ],
+   "voice_infl": [
+    11.611,
+    10.056,
+    12.833
+   ],
+   "coord": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "briefs": 18,
+   "parsed": 18,
+   "voices_valid": 18,
+   "kw": "0/18",
+   "flag_sw_ctx": 0.0,
+   "flag_org_ctx": 0.0
+  },
+  "b3|S4|collapse|detector_b5_minus_nf5": {
+   "voice_infl": {
+    "diff": -5.833,
+    "lo": -7.833,
+    "hi": -3.889,
+    "units": 6,
+    "units_up": 0,
+    "units_down": 6
+   },
+   "invite": {
+    "diff": -0.667,
+    "lo": -0.944,
+    "hi": -0.333,
+    "units": 6,
+    "units_up": 0,
+    "units_down": 5
+   },
+   "poll": {
+    "diff": -0.889,
+    "lo": -1.0,
+    "hi": -0.778,
+    "units": 6,
+    "units_up": 0,
+    "units_down": 6
+   }
+  },
+  "b3|S4|collapse|rand5": {
+   "invite": [
+    0.167,
+    0.0,
+    0.389
+   ],
+   "poll": [
+    0.889,
+    0.667,
+    1.0
+   ],
+   "momentum": [
+    1.222,
+    1.0,
+    1.444
+   ],
+   "voices": [
+    12.333,
+    11.056,
+    13.889
+   ],
+   "voice_infl": [
+    11.333,
+    10.056,
+    12.889
+   ],
+   "coord": [
+    0.944,
+    0.833,
+    1.0
+   ],
+   "briefs": 18,
+   "parsed": 18,
+   "voices_valid": 18,
+   "kw": "13/18",
+   "flag_sw_ctx": 11.33,
+   "flag_org_ctx": 10.33
+  },
+  "b3|S4|collapse|detector_b5_minus_rand5": {
+   "voice_infl": {
+    "diff": -5.556,
+    "lo": -7.222,
+    "hi": -3.889,
+    "units": 6,
+    "units_up": 0,
+    "units_down": 6
+   },
+   "invite": {
+    "diff": -0.167,
+    "lo": -0.389,
+    "hi": 0.0,
+    "units": 6,
+    "units_up": 0,
+    "units_down": 2
+   },
+   "poll": {
+    "diff": -0.778,
+    "lo": -1.0,
+    "hi": -0.444,
+    "units": 6,
+    "units_up": 0,
+    "units_down": 5
+   }
+  },
+  "b3|S5|annotate|nf5": {
+   "invite": [
+    0.333,
+    0.111,
+    0.556
+   ],
+   "poll": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "momentum": [
+    1.389,
+    1.111,
+    1.667
+   ],
+   "voices": [
+    8.667,
+    7.444,
+    9.778
+   ],
+   "voice_infl": [
+    7.667,
+    6.444,
+    8.778
+   ],
+   "coord": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "briefs": 18,
+   "parsed": 18,
+   "voices_valid": 18,
+   "kw": "7/18",
+   "flag_sw_ctx": 0.0,
+   "flag_org_ctx": 0.0
+  },
+  "b3|S5|annotate|detector_b5_minus_nf5": {
+   "voice_infl": {
+    "diff": 1.889,
+    "lo": 0.778,
+    "hi": 3.167,
+    "units": 6,
+    "units_up": 5,
+    "units_down": 0
+   },
+   "invite": {
+    "diff": -0.056,
+    "lo": -0.222,
+    "hi": 0.111,
+    "units": 6,
+    "units_up": 1,
+    "units_down": 2
+   },
+   "poll": {
+    "diff": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "units": 6,
+    "units_up": 0,
+    "units_down": 0
+   }
+  },
+  "b3|S5|annotate|rand5": {
+   "invite": [
+    0.222,
+    0.0,
+    0.444
+   ],
+   "poll": [
+    0.944,
+    0.833,
+    1.0
+   ],
+   "momentum": [
+    1.278,
+    1.0,
+    1.611
+   ],
+   "voices": [
+    10.944,
+    9.611,
+    12.056
+   ],
+   "voice_infl": [
+    9.944,
+    8.611,
+    11.056
+   ],
+   "coord": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "briefs": 18,
+   "parsed": 18,
+   "voices_valid": 18,
+   "kw": "11/18",
+   "flag_sw_ctx": 2.17,
+   "flag_org_ctx": 2.0
+  },
+  "b3|S5|annotate|detector_b5_minus_rand5": {
+   "voice_infl": {
+    "diff": -0.389,
+    "lo": -1.667,
+    "hi": 1.389,
+    "units": 6,
+    "units_up": 1,
+    "units_down": 4
+   },
+   "invite": {
+    "diff": 0.056,
+    "lo": -0.111,
+    "hi": 0.222,
+    "units": 6,
+    "units_up": 2,
+    "units_down": 1
+   },
+   "poll": {
+    "diff": 0.056,
+    "lo": 0.0,
+    "hi": 0.167,
+    "units": 6,
+    "units_up": 1,
+    "units_down": 0
+   }
+  },
+  "b3|S5|collapse|nf5": {
+   "invite": [
+    0.556,
+    0.278,
+    0.833
+   ],
+   "poll": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "momentum": [
+    1.611,
+    1.278,
+    1.889
+   ],
+   "voices": [
+    10.444,
+    9.111,
+    11.778
+   ],
+   "voice_infl": [
+    9.444,
+    8.111,
+    10.778
+   ],
+   "coord": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "briefs": 18,
+   "parsed": 18,
+   "voices_valid": 18,
+   "kw": "1/18",
+   "flag_sw_ctx": 0.0,
+   "flag_org_ctx": 0.0
+  },
+  "b3|S5|collapse|detector_b5_minus_nf5": {
+   "voice_infl": {
+    "diff": 2.889,
+    "lo": 2.111,
+    "hi": 3.722,
+    "units": 6,
+    "units_up": 6,
+    "units_down": 0
+   },
+   "invite": {
+    "diff": 0.0,
+    "lo": -0.222,
+    "hi": 0.222,
+    "units": 6,
+    "units_up": 2,
+    "units_down": 2
+   },
+   "poll": {
+    "diff": -0.056,
+    "lo": -0.167,
+    "hi": 0.0,
+    "units": 6,
+    "units_up": 0,
+    "units_down": 1
+   }
+  },
+  "b3|S5|collapse|rand5": {
+   "invite": [
+    0.611,
+    0.333,
+    0.833
+   ],
+   "poll": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "momentum": [
+    1.611,
+    1.333,
+    1.833
+   ],
+   "voices": [
+    12.5,
+    10.944,
+    14.222
+   ],
+   "voice_infl": [
+    11.5,
+    9.944,
+    13.222
+   ],
+   "coord": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "briefs": 18,
+   "parsed": 18,
+   "voices_valid": 18,
+   "kw": "5/18",
+   "flag_sw_ctx": 2.17,
+   "flag_org_ctx": 2.0
+  },
+  "b3|S5|collapse|detector_b5_minus_rand5": {
+   "voice_infl": {
+    "diff": 0.833,
+    "lo": -0.056,
+    "hi": 1.833,
+    "units": 6,
+    "units_up": 4,
+    "units_down": 2
+   },
+   "invite": {
+    "diff": -0.056,
+    "lo": -0.222,
+    "hi": 0.111,
+    "units": 6,
+    "units_up": 1,
+    "units_down": 2
+   },
+   "poll": {
+    "diff": -0.056,
+    "lo": -0.167,
+    "hi": 0.0,
+    "units": 6,
+    "units_up": 0,
+    "units_down": 1
+   }
+  },
+  "b3k|k=30|annotate|nf5": {
+   "invite": [
+    0.889,
+    0.667,
+    1.0
+   ],
+   "poll": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "momentum": [
+    1.944,
+    1.833,
+    2.0
+   ],
+   "voices": [
+    9.333,
+    5.5,
+    13.222
+   ],
+   "voice_infl": [
+    8.333,
+    4.5,
+    12.222
+   ],
+   "briefs": 18,
+   "parsed": 18,
+   "voices_valid": 18,
+   "kw": "1/18"
+  },
+  "b3k|k=30|annotate|b5_minus_nf5": {
+   "voice_infl": {
+    "diff": 5.833,
+    "lo": 2.056,
+    "hi": 9.667,
+    "units": 6,
+    "units_up": 5,
+    "units_down": 1
+   }
+  },
+  "b3k|k=30|annotate|tea_minus_nf5": {
+   "voice_infl": {
+    "diff": 8.167,
+    "lo": 4.556,
+    "hi": 11.835,
+    "units": 6,
+    "units_up": 6,
+    "units_down": 0
+   }
+  },
+  "b3k|k=30|annotate|nf5_minus_none": {
+   "voice_infl": {
+    "diff": -2.611,
+    "lo": -6.722,
+    "hi": 1.167,
+    "units": 6,
+    "units_up": 3,
+    "units_down": 3
+   },
+   "invite": {
+    "diff": 0.111,
+    "lo": 0.0,
+    "hi": 0.222,
+    "units": 6,
+    "units_up": 2,
+    "units_down": 0
+   }
+  },
+  "b3k|k=30|collapse|nf5": {
+   "invite": [
+    0.778,
+    0.444,
+    1.0
+   ],
+   "poll": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "momentum": [
+    1.944,
+    1.833,
+    2.0
+   ],
+   "voices": [
+    17.889,
+    15.222,
+    20.944
+   ],
+   "voice_infl": [
+    16.889,
+    14.222,
+    19.944
+   ],
+   "briefs": 18,
+   "parsed": 18,
+   "voices_valid": 18,
+   "kw": "0/18"
+  },
+  "b3k|k=30|collapse|b5_minus_nf5": {
+   "voice_infl": {
+    "diff": 4.444,
+    "lo": 1.167,
+    "hi": 7.389,
+    "units": 6,
+    "units_up": 4,
+    "units_down": 2
+   }
+  },
+  "b3k|k=30|collapse|tea_minus_nf5": {
+   "voice_infl": {
+    "diff": 4.278,
+    "lo": 1.5,
+    "hi": 6.833,
+    "units": 6,
+    "units_up": 5,
+    "units_down": 1
+   }
+  },
+  "b3k|k=30|collapse|nf5_minus_none": {
+   "voice_infl": {
+    "diff": 5.944,
+    "lo": 1.556,
+    "hi": 9.0,
+    "units": 6,
+    "units_up": 5,
+    "units_down": 1
+   },
+   "invite": {
+    "diff": 0.0,
+    "lo": -0.167,
+    "hi": 0.167,
+    "units": 6,
+    "units_up": 1,
+    "units_down": 1
+   }
+  }
+ },
+ "b1_operating_points": {
+  "dev": [
+   {
+    "op": "0.0025",
+    "alert": 0.0,
+    "shen": 0.0,
+    "chiang": 0.0,
+    "n_scored": 5614,
+    "n_shen": 1179,
+    "n_chiang": 886,
+    "ratio": null
+   },
+   {
+    "op": "0.005",
+    "alert": 0.0,
+    "shen": 0.0,
+    "chiang": 0.0,
+    "n_scored": 5614,
+    "n_shen": 1179,
+    "n_chiang": 886,
+    "ratio": null
+   },
+   {
+    "op": "0.01",
+    "alert": 0.0,
+    "shen": 0.0,
+    "chiang": 0.0,
+    "n_scored": 5614,
+    "n_shen": 1179,
+    "n_chiang": 886,
+    "ratio": null
+   },
+   {
+    "op": "0.02",
+    "alert": 0.0,
+    "shen": 0.0,
+    "chiang": 0.0,
+    "n_scored": 5614,
+    "n_shen": 1179,
+    "n_chiang": 886,
+    "ratio": null
+   },
+   {
+    "op": "0.03",
+    "alert": 0.027787673672960457,
+    "shen": 0.13231552162849872,
+    "chiang": 0.025959367945823927,
+    "n_scored": 5614,
+    "n_shen": 1179,
+    "n_chiang": 886,
+    "ratio": 5.097024007080429
+   },
+   {
+    "op": "0.05",
+    "alert": 0.027787673672960457,
+    "shen": 0.13231552162849872,
+    "chiang": 0.025959367945823927,
+    "n_scored": 5614,
+    "n_shen": 1179,
+    "n_chiang": 886,
+    "ratio": 5.097024007080429
+   },
+   {
+    "op": "0.075",
+    "alert": 0.0708941930887068,
+    "shen": 0.1628498727735369,
+    "chiang": 0.21557562076749437,
+    "n_scored": 5614,
+    "n_shen": 1179,
+    "n_chiang": 886,
+    "ratio": 0.7554187815568256
+   },
+   {
+    "op": "0.1",
+    "alert": 0.09992874955468471,
+    "shen": 0.19762510602205258,
+    "chiang": 0.23137697516930023,
+    "n_scored": 5614,
+    "n_shen": 1179,
+    "n_chiang": 886,
+    "ratio": 0.854126067978237
+   },
+   {
+    "op": "0.125",
+    "alert": 0.11987887424296402,
+    "shen": 0.20949957591178966,
+    "chiang": 0.25733634311512416,
+    "n_scored": 5614,
+    "n_shen": 1179,
+    "n_chiang": 886,
+    "ratio": 0.814108001130902
+   },
+   {
+    "op": "0.15",
+    "alert": 0.22942643391521197,
+    "shen": 0.731128074639525,
+    "chiang": 0.30699774266365687,
+    "n_scored": 5614,
+    "n_shen": 1179,
+    "n_chiang": 886,
+    "ratio": 2.381542184303747
+   },
+   {
+    "op": "0.175",
+    "alert": 0.22942643391521197,
+    "shen": 0.731128074639525,
+    "chiang": 0.30699774266365687,
+    "n_scored": 5614,
+    "n_shen": 1179,
+    "n_chiang": 886,
+    "ratio": 2.381542184303747
+   },
+   {
+    "op": "0.2",
+    "alert": 0.22942643391521197,
+    "shen": 0.731128074639525,
+    "chiang": 0.30699774266365687,
+    "n_scored": 5614,
+    "n_shen": 1179,
+    "n_chiang": 886,
+    "ratio": 2.381542184303747
+   },
+   {
+    "op": "0.25",
+    "alert": 0.2898111863199145,
+    "shen": 0.7404580152671756,
+    "chiang": 0.6568848758465011,
+    "n_scored": 5614,
+    "n_shen": 1179,
+    "n_chiang": 886,
+    "ratio": 1.1272264631043256
+   },
+   {
+    "op": "0.3",
+    "alert": 0.29818311364446026,
+    "shen": 0.7438507209499576,
+    "chiang": 0.6602708803611738,
+    "n_scored": 5614,
+    "n_shen": 1179,
+    "n_chiang": 886,
+    "ratio": 1.1265841688233547
+   },
+   {
+    "op": "tea",
+    "alert": 0.17296045600285,
+    "shen": 0.7048346055979644,
+    "chiang": 0.26297968397291194,
+    "n_scored": 5614,
+    "n_shen": 1179,
+    "n_chiang": 886,
+    "ratio": 2.6801865260077102,
+    "matched_in_domain": {
+     "shen": 0.46225614927904995,
+     "chiang": 0.2813999155792912
+    }
+   }
+  ],
+  "heldout": [
+   {
+    "op": "0.0025",
+    "alert": 0.0,
+    "shen": 0.0,
+    "chiang": 0.0,
+    "n_scored": 4986,
+    "n_shen": 948,
+    "n_chiang": 685,
+    "ratio": null
+   },
+   {
+    "op": "0.005",
+    "alert": 0.0,
+    "shen": 0.0,
+    "chiang": 0.0,
+    "n_scored": 4986,
+    "n_shen": 948,
+    "n_chiang": 685,
+    "ratio": null
+   },
+   {
+    "op": "0.01",
+    "alert": 0.0,
+    "shen": 0.0,
+    "chiang": 0.0,
+    "n_scored": 4986,
+    "n_shen": 948,
+    "n_chiang": 685,
+    "ratio": null
+   },
+   {
+    "op": "0.02",
+    "alert": 0.0,
+    "shen": 0.0,
+    "chiang": 0.0,
+    "n_scored": 4986,
+    "n_shen": 948,
+    "n_chiang": 685,
+    "ratio": null
+   },
+   {
+    "op": "0.03",
+    "alert": 0.036101083032490974,
+    "shen": 0.11075949367088607,
+    "chiang": 0.15474452554744525,
+    "n_scored": 4986,
+    "n_shen": 948,
+    "n_chiang": 685,
+    "ratio": 0.7157571053260091
+   },
+   {
+    "op": "0.05",
+    "alert": 0.036101083032490974,
+    "shen": 0.11075949367088607,
+    "chiang": 0.15474452554744525,
+    "n_scored": 4986,
+    "n_shen": 948,
+    "n_chiang": 685,
+    "ratio": 0.7157571053260091
+   },
+   {
+    "op": "0.075",
+    "alert": 0.040312876052948254,
+    "shen": 0.1160337552742616,
+    "chiang": 0.1562043795620438,
+    "n_scored": 4986,
+    "n_shen": 948,
+    "n_chiang": 685,
+    "ratio": 0.7428329192791513
+   },
+   {
+    "op": "0.1",
+    "alert": 0.07741676694745286,
+    "shen": 0.15084388185654007,
+    "chiang": 0.1854014598540146,
+    "n_scored": 4986,
+    "n_shen": 948,
+    "n_chiang": 685,
+    "ratio": 0.8136067643443303
+   },
+   {
+    "op": "0.125",
+    "alert": 0.08945046129161653,
+    "shen": 0.16033755274261605,
+    "chiang": 0.2,
+    "n_scored": 4986,
+    "n_shen": 948,
+    "n_chiang": 685,
+    "ratio": 0.8016877637130801
+   },
+   {
+    "op": "0.15",
+    "alert": 0.1981548335338949,
+    "shen": 0.7320675105485233,
+    "chiang": 0.25255474452554744,
+    "n_scored": 4986,
+    "n_shen": 948,
+    "n_chiang": 685,
+    "ratio": 2.898648813443575
+   },
+   {
+    "op": "0.175",
+    "alert": 0.1981548335338949,
+    "shen": 0.7320675105485233,
+    "chiang": 0.25255474452554744,
+    "n_scored": 4986,
+    "n_shen": 948,
+    "n_chiang": 685,
+    "ratio": 2.898648813443575
+   },
+   {
+    "op": "0.2",
+    "alert": 0.1981548335338949,
+    "shen": 0.7320675105485233,
+    "chiang": 0.25255474452554744,
+    "n_scored": 4986,
+    "n_shen": 948,
+    "n_chiang": 685,
+    "ratio": 2.898648813443575
+   },
+   {
+    "op": "0.25",
+    "alert": 0.27276373846770957,
+    "shen": 0.7362869198312236,
+    "chiang": 0.7328467153284671,
+    "n_scored": 4986,
+    "n_shen": 948,
+    "n_chiang": 685,
+    "ratio": 1.0046943029569486
+   },
+   {
+    "op": "0.3",
+    "alert": 0.28459687123947053,
+    "shen": 0.7373417721518988,
+    "chiang": 0.7386861313868613,
+    "n_scored": 4986,
+    "n_shen": 948,
+    "n_chiang": 685,
+    "ratio": 0.9981800670435783
+   },
+   {
+    "op": "tea",
+    "alert": 0.15122342559165664,
+    "shen": 0.7162447257383966,
+    "chiang": 0.20875912408759123,
+    "n_scored": 4986,
+    "n_shen": 948,
+    "n_chiang": 685,
+    "ratio": 3.430962497418194,
+    "matched_in_domain": {
+     "shen": 0.48523206751054854,
+     "chiang": 0.22986505777466534
+    }
+   }
+  ]
+ }
+}

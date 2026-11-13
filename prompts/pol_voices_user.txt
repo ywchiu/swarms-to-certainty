@@ -1,0 +1,11 @@
+以下是檢索到、和 2026 台北市長參選人「{candidate}」有關的社群貼文（期間：{period}）：
+{context}
+
+請評估這些貼文作為證據的獨立性。只輸出一個 JSON 物件，不要有其他文字：
+{{
+  "n_positive_messages": 表態支持「{candidate}」的貼文數,
+  "n_independent_positive_voices": 你判斷其中有幾個「彼此獨立」的支持聲音（同一人或同一協同群組只算 1 個）,
+  "coordination_concern": true 或 false（是否有跡象顯示部分帳號在協同造勢「{candidate}」）,
+  "coordination_evidence": "一句話說明理由",
+  "suspect_ids": ["m05", "..."]（你認為可能是協同造勢的貼文編號，沒有則為空陣列）
+}}

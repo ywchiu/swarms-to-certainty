@@ -1,0 +1,55 @@
+{
+ "dev": {
+  "threads_in_window": 12253,
+  "threads_sampled": 2167,
+  "msgs": 40026,
+  "posts": 2165,
+  "accounts": 27133,
+  "accounts_ge2": 5614,
+  "by_source": {
+   "threads": 21851,
+   "fans": 10286,
+   "ptt": 5624,
+   "youtube": 1867,
+   "fb_group_ifm": 155,
+   "mobile01": 154,
+   "fb_group_mjib": 37,
+   "youtube_politics": 19,
+   "dcard": 10,
+   "fb_group_investigation": 9,
+   "fb_group_cloud": 5,
+   "youtube_shorts": 3,
+   "fb_group_hsinchu": 2,
+   "fb_group_hualien": 1,
+   "fb_group_nantou": 1,
+   "youtube_kol": 1,
+   "fb_group_break": 1
+  }
+ },
+ "heldout": {
+  "threads_in_window": 10490,
+  "threads_sampled": 1656,
+  "msgs": 40510,
+  "posts": 1653,
+  "accounts": 30190,
+  "accounts_ge2": 4986,
+  "by_source": {
+   "fans": 19120,
+   "threads": 12673,
+   "youtube": 3597,
+   "ptt": 3517,
+   "youtube_politics": 1372,
+   "fb_group_ifm": 92,
+   "mobile01": 53,
+   "fb_group_mjib": 37,
+   "youtube_shorts": 17,
+   "dcard": 13,
+   "fb_group_investigation": 8,
+   "fb_group_cloud": 4,
+   "youtube_kol": 3,
+   "fb_group_taidong": 2,
+   "fb_group_taoyuan": 1,
+   "fb_group_kaobei": 1
+  }
+ }
+}

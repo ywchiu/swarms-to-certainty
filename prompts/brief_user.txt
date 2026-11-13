@@ -1,0 +1,15 @@
+決策問題：我們考慮下一季和手搖飲品牌「{brand}」推出聯名飲品，在 200 間門市上架。依目前社群上的討論，是否建議優先和「{brand}」合作？
+
+以下是檢索到的社群貼文（期間：{period}）：
+{context}
+
+請只輸出一個 JSON 物件，不要有其他文字：
+{{
+  "summary": "3–5 句的簡報摘要",
+  "decision": "recommend" | "wait" | "avoid",
+  "net_sentiment": -2 到 2 的整數（-2 非常負面，0 中性或分歧，2 非常正面）,
+  "trend": "rising" | "flat" | "falling",
+  "broad_consensus": true 或 false（社群是否已形成廣泛的正面共識）,
+  "confidence": 0 到 100 的整數（你對這個決策建議有多大把握）,
+  "key_evidence": [{{"id": "m03", "point": "這則貼文支持或反對的理由"}}]（最多 6 則，引用貼文編號）
+}}
