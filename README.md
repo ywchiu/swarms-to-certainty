@@ -7,7 +7,7 @@ Code, prompts and aggregate results for *From Swarms to Certainty: Coordinated A
 | Path | Contents |
 |---|---|
 | `src/` | experiment code: data build, claim extraction, swarm generation, briefing runs, scoring, figures |
-| `src/report_numbers.py` | regenerates every number quoted in the report (cluster-bootstrap and paired CIs, summary keyword counts, valid-answer denominators) from the run logs |
+| `src/report_numbers.py` | recomputes the briefing statistics (cluster-bootstrap and paired CIs, summary keyword counts, valid-answer denominators) from the run logs and incorporates the detector sweep (`b1_matched_rate.py`); corpus totals and tie-block counts come from the build and scoring scripts (report App. B) |
 | `prompts/` | briefing, voices, chained and count-only prompts |
 | `results/` | aggregate outputs only: `results*.json`, `report_numbers.json/.txt`, `b1_matched_rate.json`, operating points, build statistics |
 | `report/` | LaTeX source, PDF and figures |
