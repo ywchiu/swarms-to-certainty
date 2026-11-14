@@ -1,0 +1,62 @@
+{
+ "dev": {
+  "n_scored": 5614,
+  "tea_D4c": 29.0,
+  "blocks": [
+   {
+    "d4c": 0.0,
+    "size": 3940,
+    "challenger_supporters": 302,
+    "incumbent_supporters": 301
+   },
+   {
+    "d4c": 118.0,
+    "size": 821,
+    "challenger_supporters": 821,
+    "incumbent_supporters": 83
+   },
+   {
+    "d4c": 28.4,
+    "size": 476,
+    "challenger_supporters": 22,
+    "incumbent_supporters": 476
+   },
+   {
+    "d4c": 0.3,
+    "size": 55,
+    "challenger_supporters": 5,
+    "incumbent_supporters": 9
+   }
+  ]
+ },
+ "heldout": {
+  "n_scored": 4986,
+  "tea_D4c": 29.0,
+  "blocks": [
+   {
+    "d4c": 0.0,
+    "size": 3567,
+    "challenger_supporters": 249,
+    "incumbent_supporters": 179
+   },
+   {
+    "d4c": 66.5,
+    "size": 672,
+    "challenger_supporters": 672,
+    "incumbent_supporters": 61
+   },
+   {
+    "d4c": 26.1,
+    "size": 414,
+    "challenger_supporters": 11,
+    "incumbent_supporters": 414
+   },
+   {
+    "d4c": 0.8,
+    "size": 53,
+    "challenger_supporters": 7,
+    "incumbent_supporters": 1
+   }
+  ]
+ }
+}

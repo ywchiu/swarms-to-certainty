@@ -1,6 +1,7 @@
-"""B1 (sprint, 13 Nov): camp disparity of detector alerts at matched overall alert rates.
-Sweeps in-domain budgets (dev organic quantiles, strict >) and compares the transferred 'tea' point at the same
-overall organic alert rate. Detector only, no LLM calls. -> data/politics/b1_matched_rate.json"""
+"""B1 (sprint, 13 Nov): detector operating-point sweep. Share of each front-runner's scored supporters flagged at
+in-domain budgets (dev organic quantiles, strict >) and at the transferred 'tea' point, against the overall organic alert
+rate. Not a matched-rate comparison: tie blocks leave no in-domain point near tea's rate. Detector only, no LLM calls.
+-> data/politics/b1_matched_rate.json"""
 import json
 import numpy as np
 from common import DATA, D

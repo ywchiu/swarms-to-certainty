@@ -7,7 +7,7 @@ Code, prompts and aggregate results for *From Swarms to Certainty: Coordinated A
 | Path | Contents |
 |---|---|
 | `src/` | experiment code: data build, claim extraction, swarm generation, briefing runs, scoring, figures |
-| `src/report_numbers.py` | recomputes the briefing statistics (cluster-bootstrap and paired CIs, summary keyword counts, valid-answer denominators) from the run logs and incorporates the detector sweep (`b1_matched_rate.py`); corpus totals and tie-block counts come from the build and scoring scripts (report App. B) |
+| `src/report_numbers.py` | recomputes the briefing statistics (cluster-bootstrap and paired CIs, summary keyword counts, valid-answer denominators) from the run logs and incorporates the detector sweep (`b1_matched_rate.py`); corpus totals come from `build_politics.py`, tie blocks from `b1_tie_blocks.py` (report App. B) |
 | `prompts/` | briefing, voices, chained and count-only prompts |
 | `results/` | aggregate outputs only: `results*.json`, `report_numbers.json/.txt`, `b1_matched_rate.json`, operating points, build statistics |
 | `report/` | LaTeX source, PDF and figures |
@@ -15,7 +15,7 @@ Code, prompts and aggregate results for *From Swarms to Certainty: Coordinated A
 
 ## What is not here, and why
 
-- **No data.** Raw posts and comments carry platform account IDs and come from InfoMiner (LargitData's social-listening service); generated swarm text is withheld for dual-use reasons. `data/` is not released, so the pipeline cannot be rerun end to end from this repository; `results/` holds every briefing aggregate the report uses (corpus totals and tie-block sizes come from `build_politics.py` and `b1_matched_rate.py`, which need the raw data).
+- **No data.** Raw posts and comments carry platform account IDs and come from InfoMiner (LargitData's social-listening service); generated swarm text is withheld for dual-use reasons. `data/` is not released, so the pipeline cannot be rerun end to end from this repository; `results/` holds every briefing aggregate the report uses (corpus totals come from `build_politics.py`; tie-block sizes are in `results/b1_tie_blocks.json`, from `b1_tie_blocks.py`; both scripts need the raw data).
 - **Detector-evasion instruction redacted.** `EVASIVE_POL` in `src/swarm_politics.py` is replaced by a placeholder.
 - **Fictional candidate only.** Swarm content was generated only for a fictional candidate (鍾予衡). Real candidates were analysed, never written about. Nothing was posted anywhere.
 
@@ -27,10 +27,12 @@ The detector (PayloadConv / D4, D4c), the swarm generator and the H200 client ar
 
 ```bash
 cd src
-python run_politics.py nat,k,chain,chainctl,oc2,chainoc,chainctloc,bn,chainbn,chainctlbn   # Gemma (H200)
+python run_politics.py nat,k,note,chain,chainctl,oc2,chainoc,chainctloc,bn,chainbn,chainctlbn   # Gemma (H200)
+GEN_BACKEND=agy python run_politics.py nat,k,oc2                                         # Gemini 1-rep grid
 GEN_BACKEND=agy GEM_REPS=3 python run_politics.py chain,chainctl,chainoc,chainctloc         # Gemini replication
 python run_politics.py chaink,chainctlk,b3,b3k                                              # sprint controls
 python report_numbers.py      # -> data/politics/report_numbers.json
 python b1_matched_rate.py     # detector-only operating-point sweep
+python b1_tie_blocks.py       # D4c tie blocks and camp purity
 python figs_politics.py
 ```
