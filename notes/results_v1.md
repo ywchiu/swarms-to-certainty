@@ -273,7 +273,10 @@ invite / poll (6 clusters x 3 reps):
 | oss | 1/1 | 1/1 | 1/1 | 1/1 | 1/1 | .94/1 | 1/1 | 1/1 | 1/1 |
 | luna | 0/.94 | 0/1.00 | 0/.78 | 0/1.00 | 0/.78 | 0/.94 | 0/.94 | .17/1.00 | 0/1.00 |
 | haiku | 0/.94 | 0/1.00 | 0/.61 | 0/1.00 | 0/1.00 | 0/1.00 | 0/1.00 | .06/1.00 | 0/1.00 |
-Independent voices, same 30 texts on 30 accounts (k=30) vs 30 renamed real accounts: gemma 21.6 vs 14.9; qwen 16.8 vs 8.9; oss 27.0 vs 19.4; luna 2.1 vs 21.6; haiku 3.4 vs 17.8.
+Independent voices (two-call voices call), same 30 texts on 30 accounts (k=30) vs 30 renamed real accounts: gemma 11.9 vs 14.9 (21.6 is the chained k=30 count, not comparable); qwen 16.8 vs 8.9; oss 27.0 vs 19.4; luna 2.1 vs 21.6; haiku 3.4 vs 17.8.
 Paired poll k=30 − k=1: luna +0.22 [0.06, 0.44], haiku +0.39 [0.17, 0.67], qwen 0.00, oss at ceiling (momentum +0.44 [0.17, 0.72]).
 Chained (S4+S5) − count-only: qwen invite −0.56 [−0.75, −0.36], poll −0.67 [−0.83, −0.47] but renamed-30 also 0/0 (non-selective); oss −0.03 invite (no effect); luna poll −0.11 [−0.25, 0]; haiku ~0.
 Chained k=1 vs k=30 (invite/poll): oss .17/.72 vs 1.00/1.00; qwen 0/0 vs 0/.11; luna 0/.50 vs 0/.83; haiku 0/.56 vs 0/.94.
+
+## Codex review of v14 → v15 (14 Nov)
+Codex 4/4b/3, no blockers; Table 1 and abstract numbers verified. Applied: open/closed split framed as "in this six-model sample" with an App. A interface disclosure (agy/Codex flatten the system prompt; no CLI token budget; not an effect of openness); §4.1 corrected (Gemma counts the swarm slightly fewer voices than real support, 11.9 vs 14.9); "four of six" scoped to k=1→30 everywhere; Qwen "equal endpoints" (poll .33, .17 at k=3); gpt-oss "does not suppress natural-swarm decisions" (chained k=1 drops to .17/.72); Luna/Haiku chained change stated vs two calls (−0.11 [−0.25, 0.03], +0.03); Table 1 caption available-case (three cells with 17 parsed).
