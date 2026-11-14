@@ -10909,6 +10909,80 @@
    }
   }
  },
+ "rep_agreement": {
+  "gemma": {
+   "invite": {
+    "agree": 125,
+    "contexts": 149,
+    "rate": 0.839
+   },
+   "poll": {
+    "agree": 114,
+    "contexts": 149,
+    "rate": 0.765
+   }
+  },
+  "gemini": {
+   "invite": {
+    "agree": 81,
+    "contexts": 87,
+    "rate": 0.931
+   },
+   "poll": {
+    "agree": 78,
+    "contexts": 87,
+    "rate": 0.897
+   }
+  },
+  "qwen": {
+   "invite": {
+    "agree": 102,
+    "contexts": 126,
+    "rate": 0.81
+   },
+   "poll": {
+    "agree": 81,
+    "contexts": 126,
+    "rate": 0.643
+   }
+  },
+  "gpt": {
+   "invite": {
+    "agree": 120,
+    "contexts": 126,
+    "rate": 0.952
+   },
+   "poll": {
+    "agree": 100,
+    "contexts": 126,
+    "rate": 0.794
+   }
+  },
+  "oss": {
+   "invite": {
+    "agree": 107,
+    "contexts": 121,
+    "rate": 0.884
+   },
+   "poll": {
+    "agree": 110,
+    "contexts": 121,
+    "rate": 0.909
+   }
+  },
+  "haiku": {
+   "invite": {
+    "agree": 122,
+    "contexts": 125,
+    "rate": 0.976
+   },
+   "poll": {
+    "agree": 93,
+    "contexts": 125,
+    "rate": 0.744
+   }
+  }
+ },
  "b1_operating_points": {
   "dev": [
    {

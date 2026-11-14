@@ -95,7 +95,7 @@ def fig_b1():
         for key, nm, col, mk in (("chiang", "Incumbent's supporters", "#2a78d6", "o"), ("shen", "Challenger's supporters", "#eb6834", "s")):
             ax.plot([r["alert"] * 100 for r in rows], [r[key] * 100 for r in rows], color=col, marker=mk, ms=4, ls="none", label=nm + " (in-domain budgets)")
             ax.plot(tea["alert"] * 100, tea[key] * 100, color=col, marker="*", ms=12, ls="none", mec=INK, mew=0.6, label=nm + " (transferred 'tea')")
-        gap = {"dev": (12.0, 22.9), "heldout": (9.0, 19.8)}[win]  # realised-rate jump where the cut crosses the challenger's tie block
+        gap = {"dev": (12.0, 22.9), "heldout": (8.9, 19.8)}[win]  # realised-rate jump where the cut crosses the challenger's tie block
         ax.axvspan(*gap, color="#e9e7e1", zorder=0, lw=0)
         ax.text(sum(gap) / 2, 48, "challenger's\ntie block", ha="center", va="center", fontsize=6.5, color=MUTED)
         ax.set_ylim(-3, 100)

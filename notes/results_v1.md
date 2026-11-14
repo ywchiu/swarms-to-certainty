@@ -289,3 +289,10 @@ Codex 4/4b/3, no blockers; Table 1 and abstract numbers verified. Applied: open/
 - report_numbers.py: added `<model>|renamed{n}|chain_minus_twocall` paired contrasts for all models (Qwen renamed30: invite -0.22 [-0.33, -0.11], poll -0.39 [-0.56, -0.22]).
 - Rewrite: abstract = three findings; new Fig. 1 (six models); §4.2 reordered (intervention -> matched control -> model failures -> residual cost); Table 2 slimmed (momentum/voices moved to aggregates); Discussion = Finding / Fix and price / What to do (four checks); overcorrection figure -> App. C; Fig. 4 shades the challenger's tie block.
 - Review fixes: 1->30 endpoint wording; k>=10 rise "not resolved"; App. A "qualitatively unchanged" (+1.78 -> +1.94); "different briefing models" (vendors); one invalid Qwen voices answer; rep agreement (all 3 reps agree, no-defense contexts): poll Gemma .77 Qwen .64 oss .91 Luna .79 Haiku .74; invite 81-98%.
+
+## v17 (15 Nov): final reviews of v16 (Codex astra 4/4/4, Fable 4/4/4; no blockers) applied
+- Fixed contradiction: Gemini invited a swarm in 1 of 84 briefs (S5 count-only), so ".28 ... an invitation Gemini gave a swarm in 1 of 84 briefs".
+- Wording: "all but removes" (Gemma 83%->6%); "Discounting reported voices does not prevent increased poll listing"; attribution test "shows sensitivity to attribution"; detector "misses most of a self-seeded swarm and all one-post accounts"; "collapse outperforms annotate on S4 but not S5".
+- Numbers: Gemma k30-k1 poll +0.50 [0.39, 0.61] added; real-supporter voices 17.8-21.6; held-out alert-rate gap 8.9%-19.8% (text and Fig. shading); Discussion 1-3.4 voices.
+- rep agreement now computed by report_numbers.py (key rep_agreement), Gemini added (poll .90, invite .93).
+- App. B Gemini sprint jobs: 156 new (108 benign, 48 k).

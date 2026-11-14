@@ -337,3 +337,10 @@ haiku|renamed10|chained_independence {"invite": [0.0, 0.0, 0.0], "poll": [0.611,
 haiku|renamed30|chained_independence {"invite": [0.0, 0.0, 0.0], "poll": [1.0, 1.0, 1.0], "momentum": [1.556, 1.222, 1.889], "voices": [13.833, 10.61, 16.944], "voice_infl": [-16.167, -19.39, -13.056], "coord": [1.0, 1.0, 1.0], "briefs": 18, "parsed": 18, "voices_valid": 18, "kw": "14/18"}
 haiku|renamed10|chain_minus_twocall {"invite": {"diff": 0.0, "lo": 0.0, "hi": 0.0, "units": 6, "units_up": 0, "units_down": 0}, "poll": {"diff": -0.111, "lo": -0.5, "hi": 0.278, "units": 6, "units_up": 2, "units_down": 3}}
 haiku|renamed30|chain_minus_twocall {"invite": {"diff": -0.056, "lo": -0.167, "hi": 0.0, "units": 6, "units_up": 0, "units_down": 1}, "poll": {"diff": 0.0, "lo": 0.0, "hi": 0.0, "units": 6, "units_up": 0, "units_down": 0}}
+== rep_agreement
+gemma {"invite": {"agree": 125, "contexts": 149, "rate": 0.839}, "poll": {"agree": 114, "contexts": 149, "rate": 0.765}}
+gemini {"invite": {"agree": 81, "contexts": 87, "rate": 0.931}, "poll": {"agree": 78, "contexts": 87, "rate": 0.897}}
+qwen {"invite": {"agree": 102, "contexts": 126, "rate": 0.81}, "poll": {"agree": 81, "contexts": 126, "rate": 0.643}}
+gpt {"invite": {"agree": 120, "contexts": 126, "rate": 0.952}, "poll": {"agree": 100, "contexts": 126, "rate": 0.794}}
+oss {"invite": {"agree": 107, "contexts": 121, "rate": 0.884}, "poll": {"agree": 110, "contexts": 121, "rate": 0.909}}
+haiku {"invite": {"agree": 122, "contexts": 125, "rate": 0.976}, "poll": {"agree": 93, "contexts": 125, "rate": 0.744}}

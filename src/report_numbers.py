@@ -279,8 +279,32 @@ def table_models():
     return t
 
 
+def rep_agreement():
+    """Share of no-defense contexts with 3 parsed reps in which all reps give the same decision (App. A)."""
+    import collections
+    exps = ("nat", "k", "chain", "chainctl", "chaink", "chainctlk", "bn", "chainbn", "chainctlbn")
+    t = {}
+    for model, suf in MODELS:
+        agree = {"invite": [0, 0], "poll": [0, 0]}
+        for e in exps:
+            f = RUNS / f"pol_{e}{suf}.jsonl"
+            if not f.exists(): continue
+            g = collections.defaultdict(list)
+            for line in open(f):
+                r = json.loads(line)
+                if e in ("nat", "k") and r["meta"].get("defense") not in (None, "none"): continue
+                if r.get("brief"): g[r["id"]].append(r["brief"])
+            for bs in g.values():
+                if len(bs) < 3: continue
+                for key in agree:
+                    vals = [(b.get("decision") == "invite") if key == "invite" else bool(b.get("include_in_poll")) for b in bs]
+                    agree[key][0] += len(set(vals)) == 1; agree[key][1] += 1
+        t[model] = {k: {"agree": v[0], "contexts": v[1], "rate": round(v[0] / v[1], 3)} for k, v in agree.items() if v[1]}
+    return t
+
+
 if __name__ == "__main__":
-    for nm, f in (("table1_chain", table1), ("table2_defense", table2), ("k_ablation", table_k), ("overcorrection", table_oc), ("sprint_controls", table_sprint), ("models", table_models)):
+    for nm, f in (("table1_chain", table1), ("table2_defense", table2), ("k_ablation", table_k), ("overcorrection", table_oc), ("sprint_controls", table_sprint), ("models", table_models), ("rep_agreement", rep_agreement)):
         OUT[nm] = f()
         print(f"== {nm}")
         for k, v in OUT[nm].items():
