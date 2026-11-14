@@ -1,4 +1,4 @@
-"""Regenerates every number quoted in the report from the run logs -> data/politics/report_numbers.json (aggregates only).
+"""Recomputes the briefing statistics quoted in the report from the run logs (corpus totals: build_politics.py; tie blocks and alert rates: b1_matched_rate.py) -> data/politics/report_numbers.json (aggregates only).
 
   python report_numbers.py            # prints and writes report_numbers.json
 

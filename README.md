@@ -15,13 +15,13 @@ Code, prompts and aggregate results for *From Swarms to Certainty: Coordinated A
 
 ## What is not here, and why
 
-- **No data.** Raw posts and comments carry platform account IDs and come from InfoMiner (LargitData's social-listening service); generated swarm text is withheld for dual-use reasons. `data/` is not released, so the pipeline cannot be rerun end to end from this repository; `results/` holds every aggregate the report uses.
+- **No data.** Raw posts and comments carry platform account IDs and come from InfoMiner (LargitData's social-listening service); generated swarm text is withheld for dual-use reasons. `data/` is not released, so the pipeline cannot be rerun end to end from this repository; `results/` holds every briefing aggregate the report uses (corpus totals and tie-block sizes come from `build_politics.py` and `b1_matched_rate.py`, which need the raw data).
 - **Detector-evasion instruction redacted.** `EVASIVE_POL` in `src/swarm_politics.py` is replaced by a placeholder.
 - **Fictional candidate only.** Swarm content was generated only for a fictional candidate (鍾予衡). Real candidates were analysed, never written about. Nothing was posted anywhere.
 
 ## Dependencies
 
-The detector (PayloadConv / D4, D4c), the swarm generator and the H200 client are prior work from the Swarm Alignment Hackathon, imported from <https://github.com/ywchiu/payload-is-the-tell> (`PRIOR_DIR`, default `~/hackathon/apart_swarm`). Python 3.11+, numpy, pandas, httpx, matplotlib. The report builds with `xelatex` (Old Standard TT, Noto Serif CJK TC).
+The detector (PayloadConv / D4, D4c), the swarm generator and the H200 client are prior work from the Swarm Alignment Hackathon, imported from <https://github.com/ywchiu/payload-is-the-tell> (`PRIOR_DIR`, default `~/hackathon/apart_swarm`). Python 3.11+, numpy, pandas, httpx, matplotlib. The report builds with `xelatex` (Old Standard TT, OFL, bundled in `report/fonts/`; Noto Serif/Sans CJK TC, expected in `~/Library/Fonts/`, change `\cjkdir` in `main.tex` otherwise).
 
 ## Reproducing the numbers
 

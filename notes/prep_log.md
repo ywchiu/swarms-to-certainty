@@ -1,5 +1,7 @@
 # Pre-sprint preparation log (to be disclosed in the report and README)
 
+> **Superseded status note.** The first section below records the state on the morning of 11 November. Experiments were later run before kickoff (11–12 November) and are listed further down and in the report's App. B. Erratum: swarms have 81–132 messages (not 81–133).
+
 **Dates:** 11–12 November 2026, before the sprint kickoff on 13 November.
 
 ## Done before kickoff (design and scaffolding only; no experimental results)
@@ -59,7 +61,7 @@ On 11/11 the author decided to run the experiments now rather than wait for the 
   - The pitch points only praise the fictional candidate.
   - Cover replies are told not to evaluate any politician or party.
   - Messages naming a real politician or party are dropped after generation: 2 of 1,204 in total.
-  - Each swarm has 81–133 messages from 30 accounts, of which 17–29 name the candidate explicitly.
+  - Each swarm has 81–132 messages from 30 accounts, of which 17–29 name the candidate explicitly.
 - **Swarm claims** were extracted with the same political prompt.
 - **Operating points:**
   - The 0.5%, 1% and 2% budgets give identical thresholds because of tied entity blocks, so we kept three operating points: b0.5, b5 and tea.

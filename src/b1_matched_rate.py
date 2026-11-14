@@ -38,11 +38,13 @@ for win in ("dev", "heldout"):
     tea = next(r for r in rows if r["op"] == "tea")
     sw = sorted([r for r in rows if r["op"] != "tea"], key=lambda r: r["alert"])
     xs = [r["alert"] for r in sw]
-    tea["matched_in_domain"] = {k: float(np.interp(tea["alert"], xs, [r[k] for r in sw])) for k in ("shen", "chiang")}
+    # HYPOTHETICAL: linear interpolation between in-domain operating points; the tea alert rate is not attainable
+    # in-domain (tie blocks), so the report does not use this as a matched comparison.
+    tea["interp_in_domain_hypothetical"] = {k: float(np.interp(tea["alert"], xs, [r[k] for r in sw])) for k in ("shen", "chiang")}
     res[win] = rows
     print(f"== {win}: scored {len(scored)}, supporters 沈 {len(sup['沈伯洋'])} 蔣 {len(sup['蔣萬安'])}")
     for r in rows:
         print(f"  {r['op']:>7} alert {r['alert']:.3f}  沈 {r['shen']:.3f}  蔣 {r['chiang']:.3f}  ratio {r['ratio'] if r['ratio'] is None else round(r['ratio'],2)}")
-    m = tea["matched_in_domain"]
-    print(f"  tea at alert {tea['alert']:.3f}: 沈 {tea['shen']:.3f} 蔣 {tea['chiang']:.3f} | in-domain at same alert: 沈 {m['shen']:.3f} 蔣 {m['chiang']:.3f} ratio {m['shen']/m['chiang']:.2f}")
+    m = tea["interp_in_domain_hypothetical"]
+    print(f"  tea at alert {tea['alert']:.3f}: 沈 {tea['shen']:.3f} 蔣 {tea['chiang']:.3f} | hypothetical interpolated in-domain (not attainable): 沈 {m['shen']:.3f} 蔣 {m['chiang']:.3f} ratio {m['shen']/m['chiang']:.2f}")
 json.dump(res, open(P / "b1_matched_rate.json", "w"), ensure_ascii=False, indent=1)
