@@ -280,3 +280,12 @@ Chained k=1 vs k=30 (invite/poll): oss .17/.72 vs 1.00/1.00; qwen 0/0 vs 0/.11; 
 
 ## Codex review of v14 → v15 (14 Nov)
 Codex 4/4b/3, no blockers; Table 1 and abstract numbers verified. Applied: open/closed split framed as "in this six-model sample" with an App. A interface disclosure (agy/Codex flatten the system prompt; no CLI token budget; not an effect of openness); §4.1 corrected (Gemma counts the swarm slightly fewer voices than real support, 11.9 vs 14.9); "four of six" scoped to k=1→30 everywhere; Qwen "equal endpoints" (poll .33, .17 at k=3); gpt-oss "does not suppress natural-swarm decisions" (chained k=1 drops to .17/.72); Luna/Haiku chained change stated vs two calls (−0.11 [−0.25, 0.03], +0.03); Table 1 caption available-case (three cells with 17 parsed).
+
+## v16 (14 Nov, sprint): presentation rewrite + Gemini benign control and k reps 2-3
+- Gemini k-ablation now 3 reps: P(poll) k=1 0/18, k=3 0/18, k=10 .24 (17 parsed), k=30 18/18; k30-k1 poll +1.00 [1.00, 1.00], 6/6 clusters. Invite 0 everywhere. Voices 1 at every k.
+- Gemini benign control (3 reps, 108 jobs): renamed30 two calls invite .94 / poll 1.00 (voices 20.3, 15 valid); count-only 1.00/1.00; chained independence .28/.89.
+  chained - two calls, renamed30: invite -0.67 [-0.89, -0.44] (6/6 clusters down), poll -0.11 [-0.33, 0]. renamed10: invite 0 throughout, poll 1.00 -> .89.
+  => For Gemini the same-call assessment is selective on poll listing (swarm .06/.17 vs real .89) but costs real support its invitation, which no swarm ever got from Gemini.
+- report_numbers.py: added `<model>|renamed{n}|chain_minus_twocall` paired contrasts for all models (Qwen renamed30: invite -0.22 [-0.33, -0.11], poll -0.39 [-0.56, -0.22]).
+- Rewrite: abstract = three findings; new Fig. 1 (six models); §4.2 reordered (intervention -> matched control -> model failures -> residual cost); Table 2 slimmed (momentum/voices moved to aggregates); Discussion = Finding / Fix and price / What to do (four checks); overcorrection figure -> App. C; Fig. 4 shades the challenger's tie block.
+- Review fixes: 1->30 endpoint wording; k>=10 rise "not resolved"; App. A "qualitatively unchanged" (+1.78 -> +1.94); "different briefing models" (vendors); one invalid Qwen voices answer; rep agreement (all 3 reps agree, no-defense contexts): poll Gemma .77 Qwen .64 oss .91 Luna .79 Haiku .74; invite 81-98%.

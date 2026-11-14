@@ -236,7 +236,7 @@ def table_sprint():
 
 
 # ------------------------------------------------------------------ sprint (14 Nov): more briefing models, core experiments, no defense
-MODELS = (("gemma", ""), ("qwen", "_qwen"), ("gpt", "_gpt"), ("oss", "_oss"), ("haiku", "_haiku"))
+MODELS = (("gemma", ""), ("gemini", "_gemini"), ("qwen", "_qwen"), ("gpt", "_gpt"), ("oss", "_oss"), ("haiku", "_haiku"))
 
 
 def table_models():
@@ -272,6 +272,10 @@ def table_models():
             d["n"] = d["cond"].str.extract(r"n(\d+)")[0].astype(int); d["cl"] = d["win"] + "|" + d["seed"]
             for n, g in d.groupby("n"):
                 t[f"{model}|renamed{n}|{nm}"] = cell(g)
+            if e == "chainbn" and (b := load("bn", suf)) is not None:
+                b["n"] = b["cond"].str.extract(r"n(\d+)")[0].astype(int); b["cl"] = b["win"] + "|" + b["seed"]
+                for n in sorted(d.n.unique()):
+                    t[f"{model}|renamed{n}|chain_minus_twocall"] = {m: paired(d[d.n == n], b[b.n == n], "cl", m) for m in ("invite", "poll")}
     return t
 
 

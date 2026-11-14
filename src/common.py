@@ -6,6 +6,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 PRIOR = Path(os.environ.get("PRIOR_DIR", Path.home() / "hackathon" / "apart_swarm"))
 sys.path.insert(0, str(PRIOR / "src"))
+sys.path.insert(0, str(Path(__file__).resolve().parent))  # a bundled llm.py (public release) takes precedence over the prior client
 import detect as D  # noqa: E402  (prior work: PayloadConv / D4c, canon_targets, COLLIDE fix)
 import llm  # noqa: E402  (prior work: H200 Gemma client with disk cache; GEN_BACKEND=agy for Gemini)
 
