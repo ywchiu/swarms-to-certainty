@@ -8,6 +8,7 @@ Code, prompts and aggregate results for *From Swarms to Certainty: Coordinated A
 |---|---|
 | `src/` | experiment code: data build, claim extraction, swarm generation, briefing runs, scoring, figures |
 | `src/report_numbers.py` | recomputes the briefing statistics (cluster-bootstrap and paired CIs, summary keyword counts, valid-answer denominators) from the run logs and incorporates the detector sweep (`b1_matched_rate.py`); corpus totals come from `build_politics.py`, tie blocks from `b1_tie_blocks.py` (report App. B) |
+| `src/llm.py` | LLM client with the vLLM, agy (Gemini, gpt-oss), Codex (gpt-6-luna) and Claude Code (Haiku) backends; set `CHAT_URL` to your own endpoint |
 | `prompts/` | briefing, voices, chained and count-only prompts |
 | `results/` | aggregate outputs only: `results*.json`, `report_numbers.json/.txt`, `b1_matched_rate.json`, operating points, build statistics |
 | `report/` | LaTeX source, PDF and figures |
@@ -29,6 +30,12 @@ The detector (PayloadConv / D4, D4c), the swarm generator and the H200 client ar
 cd src
 python run_politics.py nat,k,note,chain,chainctl,oc2,chainoc,chainctloc,bn,chainbn,chainctlbn   # Gemma (H200)
 GEN_BACKEND=agy python run_politics.py nat,k,oc2                                         # Gemini 1-rep grid
+# four more briefing models, core experiments, no defense (sprint, 14 Nov)
+CORE=chain,chainctl,chaink,chainctlk,chainbn,chainctlbn,nat,k,bn
+MODEL_TAG=qwen CHAT_URL=<vLLM endpoint> CHAT_MODEL=<served name> CHAT_EXTRA='{"chat_template_kwargs":{"enable_thinking":false}}' python run_politics.py $CORE
+MODEL_TAG=oss GEN_BACKEND=agy AGY_MODEL=gpt-oss-120b-medium GEM_REPS=3 python run_politics.py $CORE
+MODEL_TAG=gpt GEN_BACKEND=codex CODEX_MODEL=gpt-6-luna python run_politics.py $CORE
+MODEL_TAG=haiku GEN_BACKEND=claude CLAUDE_MODEL=claude-haiku-5-5 python run_politics.py $CORE
 GEN_BACKEND=agy GEM_REPS=3 python run_politics.py chain,chainctl,chainoc,chainctloc         # Gemini replication
 python run_politics.py chaink,chainctlk,b3,b3k                                              # sprint controls
 python report_numbers.py      # -> data/politics/report_numbers.json

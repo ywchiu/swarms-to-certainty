@@ -263,3 +263,17 @@ Fable 4/4/3 and Codex gpt-6-astra 4/4(borderline)/3; both: no submission blocker
 
 ## Tenth review round (v12) → v13 (14 Nov)
 Fable 4/4/3, Codex 4/4b/3; no blockers; ~120 numbers re-verified. Applied: abstract "cuts orchestrated swarms' poll listings" (was "stops ... invitations": random flags already cut S4 invites to .17; detector − random is −0.17 on invitations, −0.78 [−1.00, −0.44] on poll listing under collapse); Gemini baseline-asymmetry CI upper bound 12.8 (was 12.7; 12.754); Discussion deployer advice now "test ... against benign-support controls before adopting"; Related Work "test no-swarm and stance-composition effects"; App. B "operating-point sweep"; Table 1 Gemini reps 2–3 marked sprint; Table 2 controls "Gemma only"; §4.2 "9–12 for a swarm under the same chained call"; abstract 248 words; App. C: 5% shares the D4c cut, so the nudged tied accounts are among its organic flags. New src/b1_tie_blocks.py reproduces the 821/476 (dev) and 672/414 (held-out) tie blocks (dev 821-block: all challenger supporters, 83 also incumbent supporters). Discussion/Conclusion trimmed to keep the body on 8 pages.
+
+## Sprint (14 Nov): four more briefing models, core experiments (no defense), 378 jobs each
+Qwen3.5-35B-A3B-FP8 (H200 GPU1, vLLM, thinking off), gpt-6-luna (Codex CLI), gpt-oss-120b-medium (agy), Claude Haiku 5.5 (Claude Code CLI, our system prompt, no tools). The CLI backends do not control temperature, and Codex adds its own agent instructions. Parsed: qwen 378/378, luna 378/378, oss 373/378, haiku 377/378.
+invite / poll (6 clusters x 3 reps):
+| model | S4 two-call | S5 two-call | k=1 | k=30 | S4 chained | S5 chained | S4 count-only | renamed30 two-call | renamed30 chained |
+| gemma | .83/1.00 | 1.00/1.00 | .28/.50 | .78/1.00 | .06/1.00 | 0/.67 | 1.00/1.00 | 1.00/1.00 | .94/1.00 |
+| qwen | .11/.22 | 0/.33 | 0/.33 | 0/.33 | 0/0 | 0/0 | .39/.61 | .22/.39 | 0/0 |
+| oss | 1/1 | 1/1 | 1/1 | 1/1 | 1/1 | .94/1 | 1/1 | 1/1 | 1/1 |
+| luna | 0/.94 | 0/1.00 | 0/.78 | 0/1.00 | 0/.78 | 0/.94 | 0/.94 | .17/1.00 | 0/1.00 |
+| haiku | 0/.94 | 0/1.00 | 0/.61 | 0/1.00 | 0/1.00 | 0/1.00 | 0/1.00 | .06/1.00 | 0/1.00 |
+Independent voices, same 30 texts on 30 accounts (k=30) vs 30 renamed real accounts: gemma 21.6 vs 14.9; qwen 16.8 vs 8.9; oss 27.0 vs 19.4; luna 2.1 vs 21.6; haiku 3.4 vs 17.8.
+Paired poll k=30 − k=1: luna +0.22 [0.06, 0.44], haiku +0.39 [0.17, 0.67], qwen 0.00, oss at ceiling (momentum +0.44 [0.17, 0.72]).
+Chained (S4+S5) − count-only: qwen invite −0.56 [−0.75, −0.36], poll −0.67 [−0.83, −0.47] but renamed-30 also 0/0 (non-selective); oss −0.03 invite (no effect); luna poll −0.11 [−0.25, 0]; haiku ~0.
+Chained k=1 vs k=30 (invite/poll): oss .17/.72 vs 1.00/1.00; qwen 0/0 vs 0/.11; luna 0/.50 vs 0/.83; haiku 0/.56 vs 0/.94.

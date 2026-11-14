@@ -256,6 +256,12 @@ if GEM:
     DEF_OC2 = DEF_ALL
     DEF_K = [(None, None)]
     DEF_CHAIN = [(None, None)]
+# Sprint (14 Nov): extra briefing models (MODEL_TAG=qwen on H200, MODEL_TAG=gpt via OpenAI). Core experiments only, no defense:
+# nat/k (two calls), chain/chainctl/chaink/chainctlk, bn/chainbn/chainctlbn; output files pol_<exp>_<tag>.jsonl.
+MODEL_TAG = os.environ.get("MODEL_TAG", "")
+if MODEL_TAG:
+    SUF = f"_{MODEL_TAG}"
+    DEF_ALL = DEF_OC2 = DEF_K = DEF_CHAIN = [(None, None)]
 
 
 def build(exps, wins, reps):

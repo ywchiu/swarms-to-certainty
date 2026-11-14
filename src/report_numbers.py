@@ -235,8 +235,48 @@ def table_sprint():
     return t
 
 
+# ------------------------------------------------------------------ sprint (14 Nov): more briefing models, core experiments, no defense
+MODELS = (("gemma", ""), ("qwen", "_qwen"), ("gpt", "_gpt"), ("oss", "_oss"), ("haiku", "_haiku"))
+
+
+def table_models():
+    t = {}
+    for model, suf in MODELS:
+        k = load("k", suf)
+        if k is None:
+            continue
+        k["cl"] = k["win"] + "|" + k["seed"]; nd = k[k.defense == "none"]
+        for kk, g in nd.groupby("k"):
+            t[f"{model}|k={kk}|two_call"] = cell(g, mets=("invite", "poll", "momentum", "voices", "voice_infl"))
+        t[f"{model}|paired_k3_minus_k1"] = {m: paired(nd[nd.k == 3], nd[nd.k == 1], "cl", m) for m in ("invite", "poll", "momentum")}
+        t[f"{model}|paired_k30_minus_k1"] = {m: paired(nd[nd.k == nd.k.max()], nd[nd.k == 1], "cl", m) for m in ("invite", "poll", "momentum")}
+        for e in ("chaink", "chainctlk"):
+            d = load(e, suf)
+            if d is None: continue
+            d["cl"] = d["win"] + "|" + d["seed"]
+            for kk, g in d.groupby("k"):
+                t[f"{model}|k={kk}|{e}"] = cell(g)
+        nat, chain, ctl = load("nat", suf), load("chain", suf), load("chainctl", suf)
+        if nat is not None and chain is not None and ctl is not None:
+            nat, chain, ctl = cl_swarm(nat), cl_swarm(chain), cl_swarm(ctl)
+            for att in ("A", "S4", "S5"):
+                t[f"{model}|{att}|two_call"] = cell(nat[(nat.attack == att) & (nat.defense == "none")])
+                t[f"{model}|{att}|chained_count_only"] = cell(ctl[ctl.attack == att])
+                t[f"{model}|{att}|chained_independence"] = cell(chain[(chain.attack == att) & (chain.defense == "none")])
+            sw = lambda d: d[d.attack.isin(["S4", "S5"])]
+            t[f"{model}|S4+S5|chain_minus_countonly"] = {m: paired(sw(chain[chain.defense == "none"]), sw(ctl), "cl", m) for m in ("invite", "poll")}
+            t[f"{model}|S4+S5|chain_minus_twocall"] = {m: paired(sw(chain[chain.defense == "none"]), sw(nat[nat.defense == "none"]), "cl", m) for m in ("invite", "poll")}
+        for e, nm in (("bn", "two_call"), ("chainctlbn", "chained_count_only"), ("chainbn", "chained_independence")):
+            d = load(e, suf)
+            if d is None: continue
+            d["n"] = d["cond"].str.extract(r"n(\d+)")[0].astype(int); d["cl"] = d["win"] + "|" + d["seed"]
+            for n, g in d.groupby("n"):
+                t[f"{model}|renamed{n}|{nm}"] = cell(g)
+    return t
+
+
 if __name__ == "__main__":
-    for nm, f in (("table1_chain", table1), ("table2_defense", table2), ("k_ablation", table_k), ("overcorrection", table_oc), ("sprint_controls", table_sprint)):
+    for nm, f in (("table1_chain", table1), ("table2_defense", table2), ("k_ablation", table_k), ("overcorrection", table_oc), ("sprint_controls", table_sprint), ("models", table_models)):
         OUT[nm] = f()
         print(f"== {nm}")
         for k, v in OUT[nm].items():
