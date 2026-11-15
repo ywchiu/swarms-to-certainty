@@ -487,6 +487,24 @@ registry|gemma:
   L|k30_minus_k1|invite|backgrounds: {'diff': 0.542, 'lo': 0.375, 'hi': 0.75, 'units': 8, 'up': 8, 'down': 0}
   L|k30_minus_k1|poll: {'diff': 0.444, 'lo': 0.25, 'hi': 0.639, 'units': 12, 'up': 9, 'down': 0}
   L|k30_minus_k1|poll|backgrounds: {'diff': 0.472, 'lo': 0.25, 'hi': 0.708, 'units': 8, 'up': 7, 'down': 0}
+  S|k1:
+    invite: {'mean': 0.0, 'lo': 0.0, 'hi': 0.0, 'n': 36}
+    poll: {'mean': 0.0, 'lo': 0.0, 'hi': 0.0, 'n': 36}
+    voices: {'mean': 1.0, 'lo': 1.0, 'hi': 1.0, 'n': 36}
+    coord: {'mean': 1.0, 'lo': 1.0, 'hi': 1.0, 'n': 36}
+    briefs: 36
+    parsed: 36
+  S|k30:
+    invite: {'mean': 0.0, 'lo': 0.0, 'hi': 0.0, 'n': 36}
+    poll: {'mean': 0.0, 'lo': 0.0, 'hi': 0.0, 'n': 36}
+    voices: {'mean': 11.111, 'lo': 6.722, 'hi': 15.612, 'n': 36}
+    coord: {'mean': 0.972, 'lo': 0.917, 'hi': 1.0, 'n': 36}
+    briefs: 36
+    parsed: 36
+  S|k30_minus_k1|invite: {'diff': 0.0, 'lo': 0.0, 'hi': 0.0, 'units': 12, 'up': 0, 'down': 0}
+  S|k30_minus_k1|invite|backgrounds: {'diff': 0.0, 'lo': 0.0, 'hi': 0.0, 'units': 8, 'up': 0, 'down': 0}
+  S|k30_minus_k1|poll: {'diff': 0.0, 'lo': 0.0, 'hi': 0.0, 'units': 12, 'up': 0, 'down': 0}
+  S|k30_minus_k1|poll|backgrounds: {'diff': 0.0, 'lo': 0.0, 'hi': 0.0, 'units': 8, 'up': 0, 'down': 0}
   U|k1:
     invite: {'mean': 0.0, 'lo': 0.0, 'hi': 0.0, 'n': 36}
     poll: {'mean': 0.0, 'lo': 0.0, 'hi': 0.0, 'n': 36}
@@ -506,9 +524,17 @@ registry|gemma:
   U|k30_minus_k1|poll: {'diff': 0.472, 'lo': 0.306, 'hi': 0.639, 'units': 12, 'up': 10, 'down': 0}
   U|k30_minus_k1|poll|backgrounds: {'diff': 0.514, 'lo': 0.375, 'hi': 0.681, 'units': 8, 'up': 8, 'down': 0}
   U_minus_L|k1|invite: {'diff': -0.417, 'lo': -0.583, 'hi': -0.25, 'units': 12, 'up': 0, 'down': 9}
+  S_minus_U|k1|invite: {'diff': 0.0, 'lo': 0.0, 'hi': 0.0, 'units': 12, 'up': 0, 'down': 0}
+  S_minus_U|k1|invite|backgrounds: {'diff': 0.0, 'lo': 0.0, 'hi': 0.0, 'units': 8, 'up': 0, 'down': 0}
   U_minus_L|k30|invite: {'diff': -0.861, 'lo': -1.0, 'hi': -0.694, 'units': 12, 'up': 0, 'down': 12}
+  S_minus_U|k30|invite: {'diff': -0.028, 'lo': -0.083, 'hi': 0.0, 'units': 12, 'up': 0, 'down': 1}
+  S_minus_U|k30|invite|backgrounds: {'diff': -0.042, 'lo': -0.125, 'hi': 0.0, 'units': 8, 'up': 0, 'down': 1}
   U_minus_L|k1|poll: {'diff': -0.556, 'lo': -0.75, 'hi': -0.361, 'units': 12, 'up': 0, 'down': 10}
+  S_minus_U|k1|poll: {'diff': 0.0, 'lo': 0.0, 'hi': 0.0, 'units': 12, 'up': 0, 'down': 0}
+  S_minus_U|k1|poll|backgrounds: {'diff': 0.0, 'lo': 0.0, 'hi': 0.0, 'units': 8, 'up': 0, 'down': 0}
   U_minus_L|k30|poll: {'diff': -0.528, 'lo': -0.694, 'hi': -0.361, 'units': 12, 'up': 0, 'down': 11}
+  S_minus_U|k30|poll: {'diff': -0.472, 'lo': -0.639, 'hi': -0.306, 'units': 12, 'up': 0, 'down': 10}
+  S_minus_U|k30|poll|backgrounds: {'diff': -0.514, 'lo': -0.681, 'hi': -0.375, 'units': 8, 'up': 0, 'down': 8}
   units:
     clusters: 12
     backgrounds: 8
@@ -531,6 +557,24 @@ registry|gemini:
   L|k30_minus_k1|invite|backgrounds: {'diff': 0.25, 'lo': 0.125, 'hi': 0.417, 'units': 8, 'up': 5, 'down': 0}
   L|k30_minus_k1|poll: {'diff': 0.556, 'lo': 0.361, 'hi': 0.75, 'units': 12, 'up': 10, 'down': 0}
   L|k30_minus_k1|poll|backgrounds: {'diff': 0.444, 'lo': 0.222, 'hi': 0.667, 'units': 8, 'up': 6, 'down': 0}
+  S|k1:
+    invite: {'mean': 0.0, 'lo': 0.0, 'hi': 0.0, 'n': 36}
+    poll: {'mean': 0.0, 'lo': 0.0, 'hi': 0.0, 'n': 36}
+    voices: {'mean': 1.0, 'lo': 1.0, 'hi': 1.0, 'n': 36}
+    coord: {'mean': 1.0, 'lo': 1.0, 'hi': 1.0, 'n': 36}
+    briefs: 36
+    parsed: 36
+  S|k30:
+    invite: {'mean': 0.0, 'lo': 0.0, 'hi': 0.0, 'n': 36}
+    poll: {'mean': 0.0, 'lo': 0.0, 'hi': 0.0, 'n': 36}
+    voices: {'mean': 1.0, 'lo': 1.0, 'hi': 1.0, 'n': 36}
+    coord: {'mean': 1.0, 'lo': 1.0, 'hi': 1.0, 'n': 36}
+    briefs: 36
+    parsed: 36
+  S|k30_minus_k1|invite: {'diff': 0.0, 'lo': 0.0, 'hi': 0.0, 'units': 12, 'up': 0, 'down': 0}
+  S|k30_minus_k1|invite|backgrounds: {'diff': 0.0, 'lo': 0.0, 'hi': 0.0, 'units': 8, 'up': 0, 'down': 0}
+  S|k30_minus_k1|poll: {'diff': 0.0, 'lo': 0.0, 'hi': 0.0, 'units': 12, 'up': 0, 'down': 0}
+  S|k30_minus_k1|poll|backgrounds: {'diff': 0.0, 'lo': 0.0, 'hi': 0.0, 'units': 8, 'up': 0, 'down': 0}
   U|k1:
     invite: {'mean': 0.0, 'lo': 0.0, 'hi': 0.0, 'n': 36}
     poll: {'mean': 0.0, 'lo': 0.0, 'hi': 0.0, 'n': 36}
@@ -550,9 +594,17 @@ registry|gemini:
   U|k30_minus_k1|poll: {'diff': 0.0, 'lo': 0.0, 'hi': 0.0, 'units': 12, 'up': 0, 'down': 0}
   U|k30_minus_k1|poll|backgrounds: {'diff': 0.0, 'lo': 0.0, 'hi': 0.0, 'units': 8, 'up': 0, 'down': 0}
   U_minus_L|k1|invite: {'diff': 0.0, 'lo': 0.0, 'hi': 0.0, 'units': 12, 'up': 0, 'down': 0}
+  S_minus_U|k1|invite: {'diff': 0.0, 'lo': 0.0, 'hi': 0.0, 'units': 12, 'up': 0, 'down': 0}
+  S_minus_U|k1|invite|backgrounds: {'diff': 0.0, 'lo': 0.0, 'hi': 0.0, 'units': 8, 'up': 0, 'down': 0}
   U_minus_L|k30|invite: {'diff': -0.222, 'lo': -0.361, 'hi': -0.083, 'units': 12, 'up': 0, 'down': 6}
+  S_minus_U|k30|invite: {'diff': 0.0, 'lo': 0.0, 'hi': 0.0, 'units': 12, 'up': 0, 'down': 0}
+  S_minus_U|k30|invite|backgrounds: {'diff': 0.0, 'lo': 0.0, 'hi': 0.0, 'units': 8, 'up': 0, 'down': 0}
   U_minus_L|k1|poll: {'diff': -0.444, 'lo': -0.639, 'hi': -0.25, 'units': 12, 'up': 0, 'down': 9}
+  S_minus_U|k1|poll: {'diff': 0.0, 'lo': 0.0, 'hi': 0.0, 'units': 12, 'up': 0, 'down': 0}
+  S_minus_U|k1|poll|backgrounds: {'diff': 0.0, 'lo': 0.0, 'hi': 0.0, 'units': 8, 'up': 0, 'down': 0}
   U_minus_L|k30|poll: {'diff': -1.0, 'lo': -1.0, 'hi': -1.0, 'units': 12, 'up': 0, 'down': 12}
+  S_minus_U|k30|poll: {'diff': 0.0, 'lo': 0.0, 'hi': 0.0, 'units': 12, 'up': 0, 'down': 0}
+  S_minus_U|k30|poll|backgrounds: {'diff': 0.0, 'lo': 0.0, 'hi': 0.0, 'units': 8, 'up': 0, 'down': 0}
   units:
     clusters: 12
     backgrounds: 8

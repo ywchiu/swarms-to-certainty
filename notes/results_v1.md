@@ -332,3 +332,8 @@ real-candidate details moved to App. C; real-candidate rows dropped from Table 2
 - Registry (8 bg): listed 0/.44 → .22/1.00; unlisted 0/0 → 0/0.
 - Jobs: 954 Gemma, 630 Gemini (sprint 2). Report v19.
 - Fresh count-only: k30 .56/1.00, real-30 .78/1.00 (chained k30 0/.11, real-30 .56/.72). Matched count-only swarm .08/1.00 vs real .94/1.00. No report body numbers changed.
+
+### 16 Nov — only-listed rule (registry arm S), after a second external review
+- Arm S = unlisted list + "辯論會邀請與民調名單只能包含上述登記參選人。" (REG_ARMS, run_politics.py), k ∈ {1, 30}, 8 backgrounds, 3 reps.
+- Gemma: 0/0 → 0/0 (unlisted without rule: 0/0 → .03/.47; S − U at k30 poll −.51 [−.68, −.38] bg, 8/8 down). Gemini: 0/0 → 0/0.
+- Reading: without the rule the list is treated as advisory; an explicit rule removes the 47%. Report: Table 3 row, §4.3 sentence, abstract/discussion clause. Jobs now 1,026 Gemma, 702 Gemini.

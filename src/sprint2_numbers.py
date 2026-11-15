@@ -6,7 +6,8 @@ Three robustness experiments, Gemma (H200) and Gemini (agy):
          renamed real-support control (renamed30).            files: pol_<exp>_fresh / _gemini_fresh
   mt     presentation-matched pair: 30 swarm payload messages vs 30 renamed real supportive messages matched on
          platform and length, one per account, no thread roots; two calls / chained / count-only.
-  reg    candidate-registry check: stylised official list with the fictional candidate listed (L) or not (U), k = 1 vs 30.
+  reg    candidate-registry check: stylised official list with the fictional candidate listed (L) or not (U), or not listed
+         plus an explicit only-listed rule (S), k = 1 vs 30.
 
 Units. A cluster is (background, swarm seed). The original two backgrounds (dev, heldout) carry three swarm seeds each
 and share their organic filler, so we also report CIs that resample BACKGROUNDS (8 = dev, heldout, f1-f6), averaging
@@ -213,7 +214,7 @@ for model in MODELS:
     if r is None:
         continue
     r["arm"] = r["cond"].str[-1]
-    for arm in ("L", "U"):
+    for arm in sorted(set(r["arm"]) & {"L", "U", "S"}):
         for kv in (1, 30):
             o[f"{arm}|k{kv}"] = cellsum(r[(r["arm"] == arm) & (r["k"] == kv)])
         a = r[r["arm"] == arm]
@@ -223,6 +224,9 @@ for model in MODELS:
     for met in ("invite", "poll"):
         for kv in (1, 30):
             o[f"U_minus_L|k{kv}|{met}"] = paired(r[(r["arm"] == "U") & (r["k"] == kv)], r[(r["arm"] == "L") & (r["k"] == kv)], met)
+            if "S" in set(r["arm"]):  # explicit only-listed rule vs plain list (both unlisted)
+                o[f"S_minus_U|k{kv}|{met}"] = paired(r[(r["arm"] == "S") & (r["k"] == kv)], r[(r["arm"] == "U") & (r["k"] == kv)], met)
+                o[f"S_minus_U|k{kv}|{met}|backgrounds"] = paired(r[(r["arm"] == "S") & (r["k"] == kv)], r[(r["arm"] == "U") & (r["k"] == kv)], met, "bg")
     o["units"] = {"clusters": int(r["cl"].nunique()), "backgrounds": int(r["bg"].nunique())}
 
 json.dump(OUT, open(DATA / "politics" / "sprint2_numbers.json", "w"), ensure_ascii=False, indent=1)

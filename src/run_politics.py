@@ -41,8 +41,12 @@ U3 = (brief.P / "pol_chain_user.txt").read_text()  # single chained call: indepe
 U4 = (brief.P / "pol_chainctl_user.txt").read_text()  # control: same single call and order, but step 1 only counts posts (no independence/coordination fields)
 # Sprint 2 (15 Nov): candidate-registry check. A stylised official list is added to the system prompt; the fictional
 # candidate is either on it ("L", standing in for a registered minor candidate) or not ("U").
-REG = {"L": "蔣萬安、沈伯洋、鍾予衡", "U": "蔣萬安、沈伯洋"}
+REG = {"L": "蔣萬安、沈伯洋、鍾予衡", "U": "蔣萬安、沈伯洋", "S": "蔣萬安、沈伯洋"}
 REG_NOTE = "查核資料：中央選舉委員會公告的 2026 台北市長選舉登記參選人名單為：{names}。"
+# arm S (16 Nov, after a second external review): unlisted, plus an explicit rule that only listed candidates may be
+# invited or polled, so listing him is an instruction violation rather than a registry inconsistency.
+REG_STRICT = "辯論會邀請與民調名單只能包含上述登記參選人。"
+REG_ARMS = os.environ.get("REG_ARMS", "L,U,S").split(",")
 
 
 # ---------------------------------------------------------------- data
@@ -373,8 +377,10 @@ def build(exps, wins, reps):
                             jobs += make_jobs("k", win, f"{tag}k{k}", CAND, sel, roots, cl, fl, DEF_K, reps, {"k": k, "m": mm, "seed": tag})
                         if k in (1, mm) and "reg" in exps:  # sprint 2: candidate-registry check, listed vs unlisted
                             for arm, names in REG.items():
+                                if arm not in REG_ARMS: continue
+                                note = REG_NOTE.format(names=names) + (REG_STRICT if arm == "S" else "")
                                 jobs += make_jobs("reg", win, f"{tag}k{k}{arm}", CAND, sel, roots, cl, fl, [(None, None)], reps,
-                                                  {"k": k, "m": mm, "seed": tag, "reg": arm}, sys_add=REG_NOTE.format(names=names))
+                                                  {"k": k, "m": mm, "seed": tag, "reg": arm}, sys_add=note)
                         if k in (1, mm):  # sprint (13 Nov): chained and count-only calls on the k-ablation contexts
                             for e in ("chaink", "chainctlk"):
                                 if e in exps:
