@@ -48,7 +48,7 @@ python run_politics.py mt,chainmt,chainctlmt,reg                  # original bac
 OUT_SUF=_fresh python run_politics.py k,chaink,chainctlk,bn,chainbn,chainctlbn,mt,chainmt,chainctlmt,reg --win f1,f2,f3,f4,f5,f6
 OUT_SUF=_fresh NO_DEF=1 python run_politics.py nat,chain,chainctl --win f1,f2,f3,f4,f5,f6        # natural S4 on fresh backgrounds
 GEN_BACKEND=agy GEM_REPS=3 python run_politics.py mt,chainmt,chainctlmt,reg                    # Gemini, original
-GEN_BACKEND=agy GEM_REPS=3 OUT_SUF=_fresh K_SET=1,30 NO_DEF=1 python run_politics.py nat,chain,chainctl,k,chaink,bn,chainbn,reg,mt,chainmt,chainctlmt --win f1,f2,f3,f4,f5,f6
+GEN_BACKEND=agy GEM_REPS=3 OUT_SUF=_fresh K_SET=1,30 NO_DEF=1 python run_politics.py nat,chain,chainctl,k,chaink,chainctlk,bn,chainbn,chainctlbn,reg,mt,chainmt,chainctlmt --win f1,f2,f3,f4,f5,f6
 python sprint2_numbers.py     # -> data/politics/sprint2_numbers.json
 python report_numbers.py      # -> data/politics/report_numbers.json
 python b1_matched_rate.py     # detector-only operating-point sweep

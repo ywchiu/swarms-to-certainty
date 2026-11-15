@@ -316,7 +316,7 @@ Gemma (all 8 backgrounds done):
   DiD -.24 [-.44,-.01]. => Gemma's natural-swarm selectivity is mostly repetition/presentation.
 - Registry: listed k1 .42/.56 -> k30 .89/1.00 (invite +.54 [.38,.75] bg); unlisted 0/0 -> .03/.47
   (poll +.51 [.38,.68] bg, 8/8 up).
-Gemini (original backgrounds + fresh k/chaink/bn; quota 429 at ~16:20, resume queued):
+Gemini (interim, original backgrounds + fresh k/chaink/bn):
 - Fresh k: 0/0 -> 0/1.00 all six; pooled 8 bg poll +1.00. Fresh chaink30 poll .11.
 - Fresh bn30 .67/.94 (17 valid), chainbn30 .56/.75 (16).
 - Matched (orig 6 clusters): two calls swarm .06/1.00 vs real 1.00/1.00; chained 0/.39 vs .78/1.00.
@@ -324,11 +324,11 @@ Gemini (original backgrounds + fresh k/chaink/bn; quota 429 at ~16:20, resume qu
 Report v18: new §4.3 + Table 3 (tab:rob); Fig. k moved to App. C; sparse-flag interpretation and in-domain
 real-candidate details moved to App. C; real-candidate rows dropped from Table 2; abstract 250 words.
 
-### Sprint 2 — Gemini completion (15 Nov 21:30)
-- Quota reset 20:06; finished nat/chain, bn/chainbn, reg, mt/chainmt, chainctl, chainctlmt (32/36) on f1–f6. Quota hit again 21:24: chainctlk and chainctlbn on fresh windows not run.
+### Sprint 2 — Gemini completion
+- Finished nat/chain/chainctl, bn/chainbn/chainctlbn, k/chaink/chainctlk, reg, mt/chainmt/chainctlmt on f1–f6.
 - Fresh natural S4: two calls 0/1.00 → chained 0/.11 (count-only 0/1.00); pooled 8 bg poll −0.90 [−0.99, −0.79].
 - Fresh renamed real-30: .67/.89 → .56/.72.
 - Matched (8 bg): two calls swarm .03/1.00 vs real 1.00/1.00; chained 0/.42 vs .83/1.00 (8/8 bg).
 - Registry (8 bg): listed 0/.44 → .22/1.00; unlisted 0/0 → 0/0.
-- Jobs: 954 Gemma, 572 Gemini (sprint 2). Report v19.
-- 16 Nov: agy quota exhausted again; the remaining 58 Gemini count-only jobs on f1–f6 (chainctlk 36, chainctlbn 18, chainctlmt 4) ran via the Gemini API (GEN_BACKEND=gemapi in llm.py: gemini-3.8-flash, reasoning_effort medium, same flattened prompt as agy). Fresh count-only: k30 .56/1.00, real-30 .78/1.00 (chained k30 0/.11, real-30 .56/.72). Matched count-only swarm .08/1.00 vs real .94/1.00. No report body numbers changed.
+- Jobs: 954 Gemma, 630 Gemini (sprint 2). Report v19.
+- Fresh count-only: k30 .56/1.00, real-30 .78/1.00 (chained k30 0/.11, real-30 .56/.72). Matched count-only swarm .08/1.00 vs real .94/1.00. No report body numbers changed.

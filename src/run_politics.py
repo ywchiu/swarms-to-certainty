@@ -223,7 +223,7 @@ def matched_pair(win, org, cl, fill_ids, band, sd):
     """Sprint 2: presentation-matched swarm / real-support pair. 30 swarm payload messages (12-160 characters, one per
     account) and 30 renamed real supportive messages, each picked to match one swarm message on platform (when the
     platform has a candidate left) and then nearest length. Both sides are shown as plain comments with no thread root,
-    so they differ only in who wrote them. Offline only."""
+    content and timing still differ. Offline only."""
     import random
     rng = random.Random(f"{win}|mt|{sd}")
     cands = [m for c in bn_cands(org, cl, fill_ids).values() for m in c]
