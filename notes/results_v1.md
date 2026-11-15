@@ -331,3 +331,4 @@ real-candidate details moved to App. C; real-candidate rows dropped from Table 2
 - Matched (8 bg): two calls swarm .03/1.00 vs real 1.00/1.00; chained 0/.42 vs .83/1.00 (8/8 bg).
 - Registry (8 bg): listed 0/.44 → .22/1.00; unlisted 0/0 → 0/0.
 - Jobs: 954 Gemma, 572 Gemini (sprint 2). Report v19.
+- 16 Nov: agy quota exhausted again; the remaining 58 Gemini count-only jobs on f1–f6 (chainctlk 36, chainctlbn 18, chainctlmt 4) ran via the Gemini API (GEN_BACKEND=gemapi in llm.py: gemini-3.8-flash, reasoning_effort medium, same flattened prompt as agy). Fresh count-only: k30 .56/1.00, real-30 .78/1.00 (chained k30 0/.11, real-30 .56/.72). Matched count-only swarm .08/1.00 vs real .94/1.00. No report body numbers changed.

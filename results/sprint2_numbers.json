@@ -551,6 +551,52 @@
    "briefs": 18,
    "parsed": 18
   },
+  "chainctlk1": {
+   "invite": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 18
+   },
+   "poll": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 18
+   },
+   "voices": null,
+   "coord": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 18
+   },
+   "briefs": 18,
+   "parsed": 18
+  },
+  "chainctlk30": {
+   "invite": {
+    "mean": 0.556,
+    "lo": 0.278,
+    "hi": 0.833,
+    "n": 18
+   },
+   "poll": {
+    "mean": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "n": 18
+   },
+   "voices": null,
+   "coord": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 18
+   },
+   "briefs": 18,
+   "parsed": 18
+  },
   "bn30": {
    "invite": {
     "mean": 0.667,
@@ -602,6 +648,29 @@
     "mean": 0.5,
     "lo": 0.167,
     "hi": 0.833,
+    "n": 18
+   },
+   "briefs": 18,
+   "parsed": 18
+  },
+  "chainctlbn30": {
+   "invite": {
+    "mean": 0.778,
+    "lo": 0.444,
+    "hi": 1.0,
+    "n": 18
+   },
+   "poll": {
+    "mean": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "n": 18
+   },
+   "voices": null,
+   "coord": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
     "n": 18
    },
    "briefs": 18,
@@ -1864,49 +1933,49 @@
   },
   "chainctlmt|MSW": {
    "invite": {
-    "mean": 0.057,
+    "mean": 0.083,
     "lo": 0.0,
-    "hi": 0.167,
-    "n": 35
+    "hi": 0.222,
+    "n": 36
    },
    "poll": {
     "mean": 1.0,
     "lo": 1.0,
     "hi": 1.0,
-    "n": 35
+    "n": 36
    },
    "voices": null,
    "coord": {
     "mean": 0.0,
     "lo": 0.0,
     "hi": 0.0,
-    "n": 35
+    "n": 36
    },
-   "briefs": 35,
-   "parsed": 35
+   "briefs": 36,
+   "parsed": 36
   },
   "chainctlmt|MBN": {
    "invite": {
-    "mean": 0.97,
-    "lo": 0.875,
+    "mean": 0.944,
+    "lo": 0.833,
     "hi": 1.0,
-    "n": 33
+    "n": 36
    },
    "poll": {
     "mean": 1.0,
     "lo": 1.0,
     "hi": 1.0,
-    "n": 33
+    "n": 36
    },
    "voices": null,
    "coord": {
     "mean": 0.0,
     "lo": 0.0,
     "hi": 0.0,
-    "n": 33
+    "n": 36
    },
-   "briefs": 33,
-   "parsed": 33
+   "briefs": 36,
+   "parsed": 36
   },
   "twocall_real_minus_swarm|invite": {
    "diff": 0.972,
@@ -1957,12 +2026,12 @@
    "down": 1
   },
   "countonly_real_minus_swarm|invite": {
-   "diff": 0.889,
-   "lo": 0.694,
+   "diff": 0.861,
+   "lo": 0.611,
    "hi": 1.0,
    "units": 12,
    "up": 11,
-   "down": 0
+   "down": 1
   },
   "twocall_real_minus_swarm|poll": {
    "diff": 0.0,

@@ -284,7 +284,7 @@ DEF_ALL = [(None, None)] + [(d, op) for op in ("b0.5", "b5", "tea") for d in ("a
 DEF_OC2 = [(None, None), ("annotate", "noflag"), ("annotate", "b5"), ("collapse", "b5"), ("annotate", "tea"), ("collapse", "tea")]
 DEF_K = [(None, None)] + [(d, op) for op in ("tea", "b5") for d in ("annotate", "collapse")]
 DEF_CHAIN = [(None, None), ("annotate", "b5"), ("collapse", "b5")]
-GEM = brief.llm.BACKEND == "agy"  # Gemini replication: 1 rep, reduced variant set, separate output files
+GEM = brief.llm.BACKEND in ("agy", "gemapi")  # Gemini replication: 1 rep, reduced variant set, separate output files
 SUF = "_gemini" if GEM else ""
 if GEM:
     DEF_ALL = [(None, None), ("annotate", "noflag"), ("annotate", "b5"), ("collapse", "b5")]
