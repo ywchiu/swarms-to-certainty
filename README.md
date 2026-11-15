@@ -8,9 +8,10 @@ Code, prompts and aggregate results for *From Swarms to Certainty: Coordinated A
 |---|---|
 | `src/` | experiment code: data build, claim extraction, swarm generation, briefing runs, scoring, figures |
 | `src/report_numbers.py` | recomputes the briefing statistics (cluster-bootstrap and paired CIs, summary keyword counts, valid-answer denominators) from the run logs and incorporates the detector sweep (`b1_matched_rate.py`); corpus totals come from `build_politics.py`, tie blocks from `b1_tie_blocks.py` (report App. B) |
+| `src/fresh_politics.py`, `src/sprint2_numbers.py` | sprint 2: six fresh thread-disjoint backgrounds with new swarms, and the statistics for the fresh replication, the presentation-matched control and the candidate-registry check (report §4.3) |
 | `src/llm.py` | LLM client with the vLLM, agy (Gemini, gpt-oss), Codex (gpt-6-luna) and Claude Code (Haiku) backends; set `CHAT_URL` to your own endpoint |
 | `prompts/` | briefing, voices, chained and count-only prompts |
-| `results/` | aggregate outputs only: `results*.json`, `report_numbers.json/.txt`, `b1_matched_rate.json`, operating points, build statistics |
+| `results/` | aggregate outputs only: `results*.json`, `report_numbers.json/.txt`, `sprint2_numbers.json/.txt` (sprint-2 robustness checks), `fresh_stats.json`, `b1_matched_rate.json`, operating points, build statistics |
 | `report/` | LaTeX source, PDF and figures |
 | `notes/` | results log (including retracted claims) and the pre-sprint preparation log |
 
@@ -39,6 +40,17 @@ MODEL_TAG=haiku GEN_BACKEND=claude CLAUDE_MODEL=claude-haiku-5-5 python run_poli
 GEN_BACKEND=agy GEM_REPS=3 python run_politics.py chain,chainctl,chainoc,chainctloc         # Gemini replication
 GEN_BACKEND=agy GEM_REPS=3 python run_politics.py bn,chainbn,chainctlbn,k               # Gemini benign control, k reps 2-3
 python run_politics.py chaink,chainctlk,b3,b3k                                              # sprint controls
+# Sprint 2 (15 Nov): fresh backgrounds, presentation-matched control, candidate registry
+python fresh_politics.py sample                                   # six thread-disjoint backgrounds f1-f6
+for w in f1 f2 f3 f4 f5 f6; do python swarm_politics.py $w S4 0,1; done
+python fresh_politics.py claims f1,f2,f3,f4,f5,f6                 # then choose seeds -> data/politics/fresh_seed.json
+python run_politics.py mt,chainmt,chainctlmt,reg                  # original backgrounds (Gemma)
+OUT_SUF=_fresh python run_politics.py k,chaink,chainctlk,bn,chainbn,chainctlbn,mt,chainmt,chainctlmt,reg --win f1,f2,f3,f4,f5,f6
+OUT_SUF=_fresh NO_DEF=1 python run_politics.py nat,chain,chainctl --win f1,f2,f3,f4,f5,f6        # natural S4 on fresh backgrounds
+GEN_BACKEND=agy GEM_REPS=3 python run_politics.py mt,chainmt,chainctlmt,reg                    # Gemini, original
+GEN_BACKEND=agy GEM_REPS=3 OUT_SUF=_fresh K_SET=1,30 NO_DEF=1 python run_politics.py nat,chain,chainctl,k,chaink,bn,chainbn,reg,mt,chainmt,chainctlmt --win f1,f2,f3,f4,f5,f6
+# (Gemini chainctlk / chainctlbn on f1-f6 were not run: API quota; see report Table 3)
+python sprint2_numbers.py     # -> data/politics/sprint2_numbers.json
 python report_numbers.py      # -> data/politics/report_numbers.json
 python b1_matched_rate.py     # detector-only operating-point sweep
 python b1_tie_blocks.py       # D4c tie blocks and camp purity

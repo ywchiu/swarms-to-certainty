@@ -1,0 +1,44 @@
+{
+ "f1": {
+  "period": "dev",
+  "threads_sampled": 1865,
+  "msgs": 40016,
+  "accounts": 28530,
+  "accounts_ge2": 5471
+ },
+ "f2": {
+  "period": "dev",
+  "threads_sampled": 1776,
+  "msgs": 40073,
+  "accounts": 29760,
+  "accounts_ge2": 4858
+ },
+ "f3": {
+  "period": "dev",
+  "threads_sampled": 1805,
+  "msgs": 40200,
+  "accounts": 28599,
+  "accounts_ge2": 5320
+ },
+ "f4": {
+  "period": "heldout",
+  "threads_sampled": 1367,
+  "msgs": 40008,
+  "accounts": 28217,
+  "accounts_ge2": 5091
+ },
+ "f5": {
+  "period": "heldout",
+  "threads_sampled": 1584,
+  "msgs": 40219,
+  "accounts": 28625,
+  "accounts_ge2": 5147
+ },
+ "f6": {
+  "period": "heldout",
+  "threads_sampled": 1470,
+  "msgs": 40029,
+  "accounts": 28701,
+  "accounts_ge2": 5312
+ }
+}

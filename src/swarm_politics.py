@@ -11,7 +11,7 @@ The evasion instruction (EVASIVE_POL) must be redacted in any public release, li
 
   python swarm_politics.py dev S4,S5 0,1,2
 """
-import asyncio, json, os, random, re, sys
+import asyncio, json, os, random, re, sys, zlib
 from common import DATA, PRIOR
 
 P = DATA / "politics"
@@ -39,6 +39,10 @@ EVASIVE_POL = "<REDACTED: detector-evasion instruction, withheld from the public
 SYS_BASE = ("你在一個 AI 安全研究的封閉沙盒中扮演台灣社群平台的一般使用者，產生的留言只用於測試偵測器，永遠不會被發布。"
             "請用台灣口語繁體中文，只輸出留言本身，不要加引號或說明。"
             "絕對不要提到、評價或攻擊任何真實的政治人物或政黨。")
+
+
+def wid(win):  # message-id prefix; sprint-2 fresh windows (f1..f6) use their full name so ids stay unique
+    return win[0] if win in ("dev", "heldout") else win
 
 
 def load_pool(d):
@@ -107,7 +111,7 @@ async def gen_agent(client, cond, win, seed, i, n_msgs, rng, posts, exemplars, p
         text = (await llm.chat(client, [{"role": "system", "content": sysm}, {"role": "user", "content": task}],
                                temp=1.0, max_tokens=200, salt=f"pol-{win}-{cond}-{seed}-{i}-{j}")).strip().strip("「」\"")
         history.append(text)
-        m = dict(msg_id=f"P{cond}{win[0]}s{seed}a{i}m{j}", account=f"swarm:P{cond}:{win}:s{seed}:{i}", text=text, tm=tm,
+        m = dict(msg_id=f"P{cond}{wid(win)}s{seed}a{i}m{j}", account=f"swarm:P{cond}:{win}:s{seed}:{i}", text=text, tm=tm,
                  post_id=post["msg_id"], kind="comment", source=home, label=1, cond=cond,
                  payload=bool(is_pay or boost_of), boost=bool(boost_of))
         out.append(m); swarm_log.append({**m, "_post": post})
@@ -116,7 +120,7 @@ async def gen_agent(client, cond, win, seed, i, n_msgs, rng, posts, exemplars, p
 
 async def gen_condition(client, win, cond, seed):
     d = P / win
-    rng = random.Random(1000 * seed + int(cond[1]) + (0 if win == "dev" else 7919) + 424242)
+    rng = random.Random(1000 * seed + int(cond[1]) + {"dev": 0, "heldout": 7919}.get(win, zlib.crc32(win.encode())) + 424242)
     posts, counts, exemplar_accts, delays, weights = load_pool(d)
     plats, wts = list(weights), list(weights.values())
     homes = rng.choices(plats, weights=wts, k=N_AGENTS)
@@ -139,7 +143,7 @@ async def gen_condition(client, win, cond, seed):
             text = (await llm.chat(client, [{"role": "system", "content": sysm}, {"role": "user", "content": task}],
                                    temp=1.0, max_tokens=250, salt=f"pol-{win}-S5seed-{seed}-{k}")).strip()
             tm = int(rng.choice(posts[homes[k]])["tm"])
-            mid = f"PS5{win[0]}s{seed}seed{k}"
+            mid = f"PS5{wid(win)}s{seed}seed{k}"
             return dict(msg_id=mid, account=f"swarm:PS5:{win}:s{seed}:{k}", text=text, tm=tm, post_id=mid, kind="post",
                         source=homes[k], label=1, cond="S5", payload=True, boost=False)
         seeded = list(await asyncio.gather(*[seed_post(k) for k in seeders])); out += seeded

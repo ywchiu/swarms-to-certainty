@@ -296,3 +296,38 @@ Codex 4/4b/3, no blockers; Table 1 and abstract numbers verified. Applied: open/
 - Numbers: Gemma k30-k1 poll +0.50 [0.39, 0.61] added; real-supporter voices 17.8-21.6; held-out alert-rate gap 8.9%-19.8% (text and Fig. shading); Discussion 1-3.4 voices.
 - rep agreement now computed by report_numbers.py (key rep_agreement), Gemini added (poll .90, invite .93).
 - App. B Gemini sprint jobs: 156 new (108 benign, 48 k).
+
+## Sprint 2 (15 Nov) — robustness checks after external review → v18
+
+Trigger: external review (statistics on two shared backgrounds; unmatched benign control; no eligibility check).
+Code: src/fresh_politics.py (six thread-disjoint 40k samples f1-f6, 3 per period; claims only for front-runner
+messages + roots + swarm), swarm_politics.py (unique ids/seeds for fresh windows), run_politics.py (mt/chainmt/
+chainctlmt matched pair; reg registry arms L/U; OUT_SUF, K_SET, NO_DEF), src/sprint2_numbers.py ->
+data/politics/sprint2_numbers.json. Fresh swarm seed rule: seed 0 unless < 30 relevant pitches (f1 -> seed 1).
+
+Gemma (all 8 backgrounds done):
+- Fresh k: k1 .17/.33 -> k30 .83/1.00; k30-k1 invite +.67 [.50,.83], poll +.67, 6/6 up. Pooled 8 bg (bg bootstrap)
+  invite +.62 [.50,.75], poll +.62 [.43,.83], 8/8.
+- Fresh natural S4: two calls .78/1.00 -> chained .06/1.00 (1/17), count-only 1.00; pooled 8 bg -.74 [-.82,-.68].
+  Renamed real30 chained .78 fresh, .86 pooled (two calls 1.00).
+- Fresh k30 chained .67/.94 (two calls .83/1.00): the one-post swarm is barely cut.
+- Matched pair (12 clusters/8 bg; platform match 29-30/30, lengths ~75-88 vs 66-81): two calls .97 vs 1.00;
+  chained swarm .67/.92 vs real .94/1.00; real-swarm +.26 [.06,.46] clusters, +.23 [-.03,.47] backgrounds;
+  DiD -.24 [-.44,-.01]. => Gemma's natural-swarm selectivity is mostly repetition/presentation.
+- Registry: listed k1 .42/.56 -> k30 .89/1.00 (invite +.54 [.38,.75] bg); unlisted 0/0 -> .03/.47
+  (poll +.51 [.38,.68] bg, 8/8 up).
+Gemini (original backgrounds + fresh k/chaink/bn; quota 429 at ~16:20, resume queued):
+- Fresh k: 0/0 -> 0/1.00 all six; pooled 8 bg poll +1.00. Fresh chaink30 poll .11.
+- Fresh bn30 .67/.94 (17 valid), chainbn30 .56/.75 (16).
+- Matched (orig 6 clusters): two calls swarm .06/1.00 vs real 1.00/1.00; chained 0/.39 vs .78/1.00.
+- Registry (orig): listed 0/.22 -> .17/1.00; unlisted 0/0 -> 0/0.
+Report v18: new §4.3 + Table 3 (tab:rob); Fig. k moved to App. C; sparse-flag interpretation and in-domain
+real-candidate details moved to App. C; real-candidate rows dropped from Table 2; abstract 250 words.
+
+### Sprint 2 — Gemini completion (15 Nov 21:30)
+- Quota reset 20:06; finished nat/chain, bn/chainbn, reg, mt/chainmt, chainctl, chainctlmt (32/36) on f1–f6. Quota hit again 21:24: chainctlk and chainctlbn on fresh windows not run.
+- Fresh natural S4: two calls 0/1.00 → chained 0/.11 (count-only 0/1.00); pooled 8 bg poll −0.90 [−0.99, −0.79].
+- Fresh renamed real-30: .67/.89 → .56/.72.
+- Matched (8 bg): two calls swarm .03/1.00 vs real 1.00/1.00; chained 0/.42 vs .83/1.00 (8/8 bg).
+- Registry (8 bg): listed 0/.44 → .22/1.00; unlisted 0/0 → 0/0.
+- Jobs: 954 Gemma, 572 Gemini (sprint 2). Report v19.
