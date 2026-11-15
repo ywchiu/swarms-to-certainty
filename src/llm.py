@@ -8,10 +8,6 @@ MODEL = os.environ.get("CHAT_MODEL", "H200-gemma-4-31B")
 BACKEND = os.environ.get("GEN_BACKEND", "")
 if BACKEND == "agy":
     MODEL = os.environ.get("AGY_MODEL", "gemini-3.8-flash-medium")
-# GEN_BACKEND=gemapi: the same Gemini model and flattened prompt as agy, through the Gemini API (OpenAI-compatible endpoint,
-# reasoning_effort medium, no temperature / max_tokens control); key from env GEMINI_KEY.
-if BACKEND == "gemapi":
-    MODEL = os.environ.get("GEMAPI_MODEL", "gemini-3.8-flash")
 # GEN_BACKEND=codex routes chat() to an OpenAI model through `codex exec` (ChatGPT account; read-only sandbox in an empty dir).
 if BACKEND == "codex":
     MODEL = os.environ.get("CODEX_MODEL", "gpt-6-luna")
@@ -37,8 +33,6 @@ async def chat(client, msgs, temp=0.9, max_tokens=300, salt=""):
         return json.loads(f.read_text())["text"]
     if BACKEND == "agy":
         return await _agy_chat(msgs, f)
-    if BACKEND == "gemapi":
-        return await _gemapi_chat(client, msgs, f)
     if BACKEND == "codex":
         return await _codex_chat(msgs, f)
     if BACKEND == "claude":
@@ -58,22 +52,6 @@ async def chat(client, msgs, temp=0.9, max_tokens=300, salt=""):
             except Exception as e:
                 if i == 3: raise
                 await asyncio.sleep(2 * (i + 1))
-
-async def _gemapi_chat(client, msgs, f):
-    prompt = "\n\n".join(m["content"] if m["role"] == "user" else f"[系統設定]\n{m['content']}\n[任務]" for m in msgs)
-    body = {"model": MODEL, "messages": [{"role": "user", "content": prompt}], "reasoning_effort": os.environ.get("GEMAPI_EFFORT", "medium")}
-    async with _sem():
-        for i in range(5):
-            try:
-                r = await client.post("https://generativelanguage.googleapis.com/v1beta/openai/chat/completions", json=body,
-                                      headers={"Authorization": f"Bearer {os.environ['GEMINI_KEY']}"}, timeout=300)
-                r.raise_for_status()
-                text = (r.json()["choices"][0]["message"]["content"] or "").strip()
-                if not text: raise ValueError("empty")
-                f.write_text(json.dumps({"text": text}, ensure_ascii=False)); return text
-            except Exception as e:
-                if i == 4: raise
-                await asyncio.sleep(5 * (i + 1))
 
 async def _agy_chat(msgs, f):
     prompt = "\n\n".join(m["content"] if m["role"] == "user" else f"[系統設定]\n{m['content']}\n[任務]" for m in msgs)
