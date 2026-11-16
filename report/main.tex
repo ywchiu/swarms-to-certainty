@@ -58,7 +58,7 @@ We study this in a live election, while generating content only about a \textbf{
 
 \textbf{Majority and social pressure in LLMs.} LLM agents defer to a group consensus, more so as the majority grows \citep{weng2025conformity}, and RLHF-trained assistants defer to their users' stated beliefs \citep{sharma2024sycophancy}. We study the same deference applied to retrieved social evidence, where the ``majority'' is a count of accounts.
 
-\textbf{AI summaries of user content.} \citet{liu2026positivity} finds positivity bias at both the sampling and summarising stages of platform AI summaries.
+\textbf{AI summaries of user content.} \citet{liu2026positivity} find positivity bias at both the sampling and summarising stages of platform AI summaries.
 
 \textbf{Coordination detection.} Classical methods find coordinated accounts through shared behavioural traces such as co-posting, co-retweeting and synchronised timing \citep{keller2020astroturfing,pacheco2021coordinated}; LLM swarms that never copy each other weaken these traces \citep{chiu2026payload}. Our defense is \ours/D4c from our prior sprint work \citep{chiu2026payload}, disclosed in App.~\ref{app:prior}. It scores an account by how widely, and how \emph{unprompted}, the entity it endorses is endorsed across threads (definition in App.~\ref{app:d4}).
 
@@ -246,7 +246,7 @@ Code, prompts, aggregate results: \url{https://github.com/ywchiu/swarms-to-certa
 \begin{thebibliography}{9}\sloppy
 \bibitem[Chiu(2026)]{chiu2026payload} Y.-W. Chiu. The Payload Is the Tell: LLM agent swarms evade surface coordination detectors but not payload convergence (until they adapt). Apart Research Swarm Alignment Hackathon, Nov 2026. \url{https://github.com/ywchiu/payload-is-the-tell}
 \bibitem[Keller et~al.(2020)]{keller2020astroturfing} F.~B. Keller, D.~Schoch, S.~Stier, J.~Yang. Political astroturfing on Twitter: How to coordinate a disinformation campaign. \emph{Political Communication} 37(2):256--280, 2020. doi:10.1080/10584609.2019.1661888
-\bibitem[Liu(2026)]{liu2026positivity} A.~Y. Liu. Positivity bias in AI-generated summaries of user-generated content: Exploring its sources and impact on public sentiment. \emph{Computational Communication Research} 8(2), 2026. doi:10.5117/CCR2026.2.4.LIU
+\bibitem[Liu and Zhang(2026)]{liu2026positivity} A.~Y. Liu, M.~M. Zhang. Positivity bias in AI-generated summaries of user-generated content: Exploring its sources and impact on public sentiment. \emph{Computational Communication Research} 8(2), 2026. doi:10.5117/CCR2026.2.4.LIU
 \bibitem[Pacheco et~al.(2021)]{pacheco2021coordinated} D.~Pacheco, P.-M. Hui, C.~Torres-Lugo, B.~T. Truong, A.~Flammini, F.~Menczer. Uncovering coordinated networks on social media: Methods and case studies. In \emph{Proc.\ ICWSM} 15:455--466, 2021. doi:10.1609/icwsm.v15i1.18075
 \bibitem[Sharma et~al.(2024)]{sharma2024sycophancy} M.~Sharma, M.~Tong, et~al. Towards understanding sycophancy in language models. In \emph{ICLR 2024}. arXiv:2310.13548
 \bibitem[Weng et~al.(2025)]{weng2025conformity} Z.~Weng, G.~Chen, W.~Wang. Do as we do, not as you think: The conformity of large language models. In \emph{ICLR 2025}. arXiv:2501.13381
